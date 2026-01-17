@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo -e "Enter the names of the file to create (separated by spaces): "
-read -r file_name # filename - server.log
+echo "Enter the name of the file to create:"
+read -r file_name   # example: server.log
 
-echo -e "Creating files: $file_name\n"
-touch $file_name
+echo "Creating file: $file_name"
+touch "$file_name"
