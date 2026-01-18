@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo "the current working directory is -" ;
-pwd 
