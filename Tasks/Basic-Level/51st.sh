@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Definition
+
 check_file() {
-    if [ -f "$1" ]; then
-        echo "File '$1' exists."
+    local filename="$1"
+
+    if [ -e "$filename" ]; then
+        echo "File '$filename' exists."
     else
-        echo "File '$1' does not exist."
+        echo "File '$filename' does not exist."
     fi
 }
-
-# Call the function
-check_file "my_file.txt"
