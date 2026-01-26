@@ -1,10 +1,16 @@
 #!/bin/bash
 
-# Create the script with the shebang and the print command
-echo -e "#!/bin/bash\necho 'Script executed!'" > my_script.sh
+# Define the function
+check_file() {
+    local filename="$1"
 
-# Make the script executable
-chmod +x my_script.sh
+    if [ -e "$filename" ]; then
+        echo "File '$filename' exists."
+    else
+        echo "File '$filename' does not exist."
+    fi
+}
 
-# Run the script using the relative path
-./my_script.sh
+# Call the function with my_file.txt
+check_file my_file.txt
+
