@@ -1,6 +1,8 @@
-# 200 Bash Scripting Tasks for Cloud Engineers
+﻿# 200 Bash Scripting Tasks for Cloud Engineers
 
 This document outlines 200 Bash scripting tasks, categorized from basic to intermediate to advanced, suitable for individuals aiming to become proficient in Bash for cloud engineering tasks.
+
+> Note: This repository currently contains implemented scripts for Basic-Level tasks 1-60 under `Tasks/Basic-Level/`. The remaining tasks are listed as a roadmap.
 
 ---
 
@@ -246,7 +248,7 @@ This document outlines 200 Bash scripting tasks, categorized from basic to inter
 195. Implement a rollback mechanism in case of script failure during critical operations.
 196. Use `set -o pipefail` to ensure that a script exits if any command in a pipeline fails.
 197. Write a script to automatically collect and report error logs.
-198. Use ` shellcheck` to statically analyze your Bash scripts for potential issues.
+198. Use `shellcheck` to statically analyze your Bash scripts for potential issues.
 
 **Creating Reusable Bash Libraries:**
 

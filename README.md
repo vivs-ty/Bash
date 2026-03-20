@@ -1,18 +1,32 @@
 # 📘 Bash Scripting Guide for Cloud Engineers
-Bash scripting is a great skill, especially for automating tasks and managing systems efficiently. 
+
+Bash scripting is a great skill, especially for automating tasks and managing systems efficiently.
 
 ## 📌 Overview
+
 This guide is structured in three phases:
 
 1. **Phase 1 – Beginner**: Bash basics and scripting fundamentals.
 2. **Phase 2 – Intermediate**: File handling, log parsing, and automation.
 3. **Phase 3 – Advanced**: Cloud automation, CLI integration, networking, and debugging.
 
+## 🧭 Repository Navigation
+
+- **Phase 1 details:** `Phase1/Readme.md` and `Phase1/Beginner.md`
+- **Phase 2 details:** `Phase2/Readme.md` and `Phase2/Intermediate.md`
+- **Phase 3 details:** `Phase3/Readme.md` and `Phase3/Advanced.md`
+- **Task list:** `Tasks/Readme.md`
+
+## 📈 Current Implementation Status
+
+- The full curriculum lists 200 tasks in `Tasks/Readme.md`.
+- The currently implemented scripts are in `Tasks/Basic-Level/` (tasks 1 to 60).
+
 ---
 
 ## 🚀 Phase 1: Beginner Level
 
-### 📂 Topics
+### 📂 Phase 1 Topics
 
 - **What is Bash?**
 - **Basic Shell Commands**
@@ -66,7 +80,7 @@ free -m
 
 ## ⚙️ Phase 2: Intermediate Level
 
-### 📂 Topics
+### 📂 Phase 2 Topics
 
 - **File and Directory Operations**
 - **Parsing Logs (e.g., Apache, Nginx)**
@@ -125,7 +139,7 @@ ps aux --sort=-%mem | head -n 6
 
 ## 🧠 Phase 3: Advanced Level
 
-### 📂 Topics
+### 📂 Phase 3 Topics
 
 - **Cloud CLI Integration (AWS CLI, Azure CLI, gcloud)**
 - **Automating Infrastructure (e.g., Terraform with Bash)**
@@ -207,18 +221,22 @@ echo -e "\nMonitoring complete"
 
 ---
 
-## 📁 Folder Structure for Practice
+## 📁 Folder Structure in This Repository
 
 ```bash
-bash-learning/
-├── phase1-basics/
-│   ├── hello.sh
-│   └── health-check.sh
-├── phase2-intermediate/
-│   ├── parse-logs.sh
-│   └── user-audit.sh
-├── phase3-advanced/
-│   ├── s3-backup.sh
-│   └── ec2-monitor.sh
+Bash/
+├── Phase1/
+│   ├── Readme.md
+│   └── Beginner.md
+├── Phase2/
+│   ├── Readme.md
+│   └── Intermediate.md
+├── Phase3/
+│   ├── Readme.md
+│   └── Advanced.md
+└── Tasks/
+  ├── Readme.md
+  └── Basic-Level/
 ```
+
 ---

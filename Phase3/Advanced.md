@@ -5,6 +5,7 @@
 ### ☁️ Cloud CLI Integration
 
 **AWS CLI Example:**
+
 ```bash
 #!/bin/bash
 
@@ -18,6 +19,7 @@ aws s3 ls
 ```
 
 **Azure CLI Example:**
+
 ```bash
 #!/bin/bash
 
@@ -29,6 +31,7 @@ az vm list --output table
 ```
 
 **Google Cloud Example:**
+
 ```bash
 #!/bin/bash
 
@@ -42,6 +45,7 @@ gsutil ls
 ### 🏗️ Automating Infrastructure
 
 **Terraform with Bash Example:**
+
 ```bash
 #!/bin/bash
 
@@ -61,13 +65,14 @@ terraform apply tfplan
 ### 🌐 Networking Tools
 
 **Network Connectivity Check:**
+
 ```bash
 #!/bin/bash
 
 # Function to check host connectivity
 check_host() {
     local host=$1
-    if ping -c 1 $host &> /dev/null; then
+    if ping -c 1 "$host" > /dev/null 2>&1; then
         echo "$host is reachable"
     else
         echo "$host is unreachable"
@@ -76,30 +81,31 @@ check_host() {
 
 # Check open ports
 check_ports() {
-    local host=$1
     netstat -tuln | grep LISTEN
 }
 
 # Make HTTP request
 check_website() {
     local url=$1
-    curl -sI $url | head -n 1
+    curl -sI "$url" | head -n 1
 }
 ```
 
 ### 🔄 APIs with curl and jq
 
 **REST API Integration:**
+
 ```bash
 #!/bin/bash
 
 # Make API request and parse JSON response
 get_data() {
     local endpoint=$1
-    local response=$(curl -s "$endpoint")
+    local response
+    response=$(curl -s "$endpoint")
     
     # Parse with jq
-    echo $response | jq '.'
+    echo "$response" | jq '.'
 }
 
 # Example usage
@@ -115,6 +121,7 @@ get_weather() {
 ### 🐛 Error Handling and Debugging
 
 **Advanced Error Handling:**
+
 ```bash
 #!/bin/bash
 
@@ -122,16 +129,15 @@ get_weather() {
 set -x
 
 # Error handling
-set -e
-set -o pipefail
+set -euo pipefail
 
 # Error trap
 trap 'echo "Error on line $LINENO. Exit code: $?"' ERR
 
 # Function with error handling
 process_file() {
-    local file=$1
-    if [[ ! -f $file ]]; then
+    local file="$1"
+    if [[ ! -f "$file" ]]; then
         echo "Error: File $file not found" >&2
         return 1
     fi
@@ -141,6 +147,7 @@ process_file() {
 ### 📚 Creating Reusable Bash Libraries
 
 **Library Example (lib.sh):**
+
 ```bash
 #!/bin/bash
 
@@ -164,23 +171,24 @@ is_root() {
 ### 🔐 Secure Credential Management
 
 **Credentials Handling:**
+
 ```bash
 #!/bin/bash
 
-# Using environment variables
-export DB_PASSWORD="secretpass"
+# Read from environment (set in shell, CI, or secret manager), never hardcode
+: "${DB_PASSWORD:?DB_PASSWORD is not set}"
 
 # Using encrypted files
 encrypt_credentials() {
     local file=$1
-    gpg -c $file
+    gpg -c "$file"
 }
 
 # Using AWS Secrets Manager
 get_secret() {
     local secret_name=$1
     aws secretsmanager get-secret-value \
-        --secret-id $secret_name \
+        --secret-id "$secret_name" \
         --query 'SecretString' \
         --output text
 }
@@ -188,7 +196,7 @@ get_secret() {
 # Using Hashicorp Vault
 get_vault_secret() {
     local path=$1
-    vault kv get -field=password $path
+    vault kv get -field=password "$path"
 }
 ```
 
@@ -223,4 +231,3 @@ get_vault_secret() {
 ```
 
 ---
-
