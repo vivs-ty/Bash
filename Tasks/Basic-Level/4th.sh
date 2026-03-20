@@ -1,3 +1,6 @@
+# Show the current working directory.
+
 #!/bin/bash
-echo "Current Workin Directory is: "; pwd
+echo "Current working directory: $(pwd)"
+
 

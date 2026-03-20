@@ -1,5 +1,6 @@
-#!/bin/bash
+# Print the current date and time.
 
-echo "Current Date and time is: ~" 
-date
+#!/bin/bash
+echo "Current date and time: $(date)"
+echo "Current date: $(date +%Y-%m-%d)"
 

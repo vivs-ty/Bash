@@ -1,2 +1,7 @@
+# Display the username of the current user.
+
 #!/bin/bash
-echo "The username of current user is :"; whoami
+echo "Current user: $USER"
+echo "Username: $(whoami)"
+echo "User ID: $(id -un)"
+echo "User Name: $(id -u -n)"
