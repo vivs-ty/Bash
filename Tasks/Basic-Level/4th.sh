@@ -1,4 +1,4 @@
-# Show the current working directory.
+# 4. Show the current working directory.
 
 #!/bin/bash
 echo "Current working directory: $(pwd)"
