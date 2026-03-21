@@ -4,7 +4,7 @@ FILE="server.log"
 
 if [ -f "$FILE" ]; then
     echo "Enter the keyword you want to find:"
-    echo "For example "Error" "
+    echo "Example: error"
     read search_term
 
     echo "--- Search Results ---"

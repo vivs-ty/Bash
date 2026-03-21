@@ -1,4 +1,4 @@
-#/!bin/bash
+#!/bin/bash
 
 until [ -f "config.ready" ]; do
     echo "Waiting for config.ready to be created..."
