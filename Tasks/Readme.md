@@ -4,6 +4,17 @@ This document outlines 200 Bash scripting tasks, categorized from basic to inter
 
 > Note: This repository currently contains implemented scripts for Basic-Level tasks 1-60 under `Tasks/Basic-Level/`. The remaining tasks are listed as a roadmap.
 
+## Start Here (Absolute Beginner)
+
+If you are new to Bash, complete tasks in order from 1 onward.
+
+1. Read each task statement first.
+2. Run the matching script from `Tasks/Basic-Level/`.
+3. Edit the script and experiment with small changes.
+4. Move to the next task only after you understand the current one.
+
+This challenge is designed to start from the very beginning and build confidence step by step.
+
 ---
 
 ## Phase 1: Basic Level (Tasks 1-70)
