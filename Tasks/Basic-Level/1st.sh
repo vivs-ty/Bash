@@ -1,4 +1,4 @@
-# Print "Hello, Cloud!" to the console.
+# 1.Print "Hello, Cloud!" to the console.
 
 !/bin/bash
 echo "Hello, Cloud Engineers!"

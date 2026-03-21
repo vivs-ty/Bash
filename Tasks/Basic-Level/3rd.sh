@@ -1,4 +1,4 @@
-# Display the username of the current user.
+# 3. Display the username of the current user.
 
 #!/bin/bash
 echo "Current user: $USER"

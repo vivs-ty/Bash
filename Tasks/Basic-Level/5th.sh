@@ -1,4 +1,4 @@
-# Navigate to the /tmp directory.
+# 5. Navigate to the /tmp directory.
 
 #!/bin/bash
 

@@ -1,4 +1,4 @@
-#Go back to the previous directory.
+# 6. Go back to the previous directory.
 
 #!/bin/bash
 

@@ -1,4 +1,4 @@
-# Print the current date and time.
+# 2. Print the current date and time.
 
 #!/bin/bash
 echo "Current date and time: $(date)"
