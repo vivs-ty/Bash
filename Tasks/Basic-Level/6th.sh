@@ -1,6 +1,5 @@
-# 6. Go back to the previous directory.
-
 #!/bin/bash
+# 6. Go back to the previous directory.
 
 echo -e "Going back to the previous directory using cd - \n "
 
