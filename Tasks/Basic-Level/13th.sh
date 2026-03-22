@@ -1,3 +1,5 @@
+# 13. Create an empty file named `server.log`.
+
 #!/bin/bash
 
 echo "Enter the name of the file to create:"
