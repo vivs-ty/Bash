@@ -1,6 +1,8 @@
+# 17. Move `app.config` to the `infra` directory.
+
 #!/bin/bash
 
-# Move app.config to the infra directory. 
+echo "Moving app.config to infra directory..."
 
 mv app.config infra/
 

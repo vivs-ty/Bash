@@ -1,6 +1,8 @@
+# 18. Rename `database.config` to `db.config`.
+
 #!/bin/bash
 
-# Rename database.config to db.config.
+echo "Renaming database.config to db.config..."
 
 mv database.config db.config
 
