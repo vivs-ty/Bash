@@ -1,6 +1,8 @@
+# 16. Copy the entire `cloud_scripts` directory to `backup_scripts`.
+
 #!/bin/bash
 
-# Copy the entire cloud_scripts directory to backup_scripts.
+echo "Copying cloud_scripts directory to backup_scripts..."
 
 cp -r cloud_scripts backup_scripts
 

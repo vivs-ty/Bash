@@ -1,6 +1,8 @@
+# 15. Copy `server.log` to `server.log.backup`
+
 #!/bin/bash
 
-#Copy server.log to server.log.backup.
+echo "Copying server.log to server.log.backup..."
 
 cp server.log server.log.backup
 
