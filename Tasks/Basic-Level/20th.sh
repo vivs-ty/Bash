@@ -1,6 +1,8 @@
+# 20. Remove the `backup_scripts` directory and its contents. (Use with caution!)
+
 #!/bin/bash
 
-# Remove the backup_scripts directory and its contents. (Use with caution!)
+echo "Removing backup_scripts directory and its contents... (Use with caution!)"
 
 if [[ -d backup_scripts ]]; then
   rm -rf backup_scripts

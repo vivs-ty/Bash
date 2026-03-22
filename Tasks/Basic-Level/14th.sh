@@ -1,3 +1,5 @@
+# 14. Create multiple empty files: `app.config`, `database.config`.
+
 #!/bin/bash
 
 echo "Enter the names of the files to create (separated by spaces):"

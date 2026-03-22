@@ -1,6 +1,8 @@
+# 19. Remove the empty file `server.log`.
+
 #!/bin/bash
 
-# Remove the empty file server.log.
+echo "Removing empty file server.log..."
 
 if [[ -f server.log ]]; then
   rm server.log
