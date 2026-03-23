@@ -1,3 +1,5 @@
+# 34. Check if a directory named `logs` exists.
+
 #!/bin/bash
 
 if [ -d "logs" ]; then

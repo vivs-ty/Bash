@@ -1,3 +1,5 @@
+# 33. Check if a file named `data.txt` exists.
+
 #!/bin/bash
 
 if [ -f "data.txt" ]; then
