@@ -1,3 +1,5 @@
+# 37. Check if a file is executable.
+
 #!/bin/bash
 
 file="script.sh"
