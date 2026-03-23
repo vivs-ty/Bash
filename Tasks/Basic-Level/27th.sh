@@ -1,3 +1,5 @@
+# 27. Count the number of lines in `db.config`.
+
 #!/bin/bash
 
 # Example: setting the variable

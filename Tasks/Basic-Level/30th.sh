@@ -1,3 +1,5 @@
+# 30. Print the value of the `REGION` variable.
+
 #!/bin/bash
 
 # Assigning for the sake of the example

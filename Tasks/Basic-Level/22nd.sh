@@ -1,3 +1,5 @@
+# 22. Display the first 10 lines of `server.log`.
+
 #!/bin/bash
 
 echo "Please enter the file name:"
