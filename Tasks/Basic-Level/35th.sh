@@ -1,3 +1,5 @@
+# 35. Check if a file is readable.
+
 #!/bin/bash
 
 file="data.txt"

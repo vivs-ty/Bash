@@ -1,3 +1,5 @@
+# 36. Check if a file is writable.
+
 #!/bin/bash
 
 file="data.txt"
