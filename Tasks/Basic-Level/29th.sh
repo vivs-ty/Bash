@@ -1,3 +1,5 @@
+# 29. Create a variable named `REGION` and assign it the value `us-east-1`.
+
 #!/bin/bash
 
 REGION="us-east-1"

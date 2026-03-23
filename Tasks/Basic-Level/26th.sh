@@ -1,3 +1,5 @@
+# 26. Search for lines containing "INFO" in `app.config` (case-insensitive).
+
 #!/bin/bash
 
 FILE="app.config"

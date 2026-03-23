@@ -1,3 +1,5 @@
+# 23. Display the last 5 lines of `db.config`.
+
 #!/bin/bash
 
 echo "Please enter the file name:"

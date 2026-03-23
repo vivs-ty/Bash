@@ -1,3 +1,5 @@
+# 25. Search for the word "error" in `server.log`.
+
 #!/bin/bash
 
 FILE="server.log"

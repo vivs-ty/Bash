@@ -1,3 +1,5 @@
+# 24. Display the content of `server.log` page by page.
+
 #!/bin/bash
 
 FILE="server.log"
