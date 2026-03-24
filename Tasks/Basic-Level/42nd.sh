@@ -1,3 +1,5 @@
+# 42. Use the `test` command to compare two numbers.
+
 #!/bin/bash
 
 num1=10

@@ -1,3 +1,5 @@
+# 49. Define a function named `greet` that prints "Hello!".
+
 #!/bin/bash
 
 # Definition:

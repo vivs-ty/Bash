@@ -1,3 +1,5 @@
+# 41. Use the `test` command to check if a string is empty.
+
 #!/bin/bash
 
 my_string=""
