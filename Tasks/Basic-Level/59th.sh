@@ -1,3 +1,5 @@
+# 59. Create a script that takes two numbers as arguments and prints their sum.
+
 #!/bin/bash
 
 # Check if two arguments are provided
