@@ -1,3 +1,5 @@
+# 52. Call the `check_file` function with `my_file.txt` as an argument.
+
 #!/bin/bash
 
 # Define the function
