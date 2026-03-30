@@ -1,3 +1,5 @@
+# 58. Create a script that takes a filename as a command-line argument and prints its content.
+
 #!/bin/bash
 
 # Check if a filename argument is provided

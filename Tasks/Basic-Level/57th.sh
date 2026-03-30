@@ -1,3 +1,5 @@
+# 57. Execute `my_script.sh` using `./my_script.sh`.
+
 #!/bin/bash
 
 # Execute my_script.sh

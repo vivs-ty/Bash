@@ -1,6 +1,6 @@
 # 1.Print "Hello, Cloud!" to the console.
 
-!/bin/bash
+#!/bin/bash
 echo "Hello, Cloud Engineers!"
 
 

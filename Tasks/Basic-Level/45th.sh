@@ -2,7 +2,15 @@
 
 #!/bin/bash
 
-for logfile in *.log; do
+shopt -s nullglob
+log_files=(*.log)
+
+if [ ${#log_files[@]} -eq 0 ]; then
+    echo "No .log files found in the current directory."
+    exit 0
+fi
+
+for logfile in "${log_files[@]}"; do
     echo "Scanning $logfile for errors..."
     # Add processing logic here
 done

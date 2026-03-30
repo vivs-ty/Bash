@@ -4,7 +4,7 @@
 
 echo "Please Enter the File Name:"
 
-read file_name
+read -r file_name
 
 cat "$file_name"
 
