@@ -1,3 +1,5 @@
+# 54. Make `my_script.sh` executable.
+
 #!/bin/bash
 
 
