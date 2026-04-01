@@ -16,4 +16,3 @@ if [ -f "$file_name" ]; then
 else
     echo "File not found."
 fi 
-echo "This script will prompt the user for confirmation before deleting the specified file. It checks if the file exists, and if it does, it asks for confirmation. If the user confirms with 'y', the file is deleted; otherwise, the deletion is cancelled." 
