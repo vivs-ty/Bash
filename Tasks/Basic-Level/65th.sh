@@ -1,0 +1,19 @@
+# 65. Create a script that prompts the user for confirmation before deleting a file.
+
+#!/bin/bash
+
+echo "Enter the name of the file you want to delete:"       
+read file_name
+if [ -f "$file_name" ]; then
+    echo "Are you sure you want to delete $file_name? (y/n)"
+    read confirmation
+    if [ "$confirmation" = "y" ]; then
+        rm "$file_name"
+        echo "$file_name has been deleted."
+    else
+        echo "Deletion cancelled."
+    fi
+else
+    echo "File not found."
+fi 
+echo "This script will prompt the user for confirmation before deleting the specified file. It checks if the file exists, and if it does, it asks for confirmation. If the user confirms with 'y', the file is deleted; otherwise, the deletion is cancelled." 
