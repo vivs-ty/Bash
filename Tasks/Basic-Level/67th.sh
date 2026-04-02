@@ -2,12 +2,9 @@
 
 #!/bin/bash
 
-# Set the threshold for disk space (in percentage)
-THRESHOLD=20
-# Get the current disk usage percentage
-USAGE=$(df / | tail -1 | awk '{print $5}' | sed 's/%//')
+THRESHOLD=80
+USAGE=$(df / | tail -1 | awk '{gsub(/%/,""); print $5}')
 
-# Check if the disk usage is above the threshold
 if [ "$USAGE" -ge "$THRESHOLD" ]; then
-    echo "Warning: Disk space is below $THRESHOLD%."
+    echo "Warning: Disk usage is at $USAGE%. Less than $((100 - THRESHOLD))% free."
 fi 
