@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Extracting all unique IP addresses from the Apache access log..."
-echo " use the command: awk '{print $1}' /var/log/apache2/access.log "
+echo " use the command: awk '{print $1}' /var/log/apache2/access.log | sort -u"
 echo "Results:"
-awk '{print $1}' /var/log/apache2/access.log | sort | -u
+awk '{print $1}' /var/log/apache2/access.log | sort -u

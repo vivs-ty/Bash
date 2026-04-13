@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Calculating the total size of all files in the current directory..."
-echo " use the command: du -sh . | awk '{print $1}'"
+echo " use the command: du -a . | awk '{sum += $1} END {print sum}'"
 echo "Results:"
-du -sh . | awk '{print $1}' 
+du -a . | awk '{sum += $1} END {print sum}' 
