@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Extracting specific columns (timestamp and request method) from the web server log..."
-echo " use the command: awk '{print $4, $6}' /var/log/nginx/access.log "
+echo " use the command: sudo awk '{print $4, $6}' /var/log/nginx/access.log "
 echo "Results:"
-awk '{print $4, $6}' /var/log/nginx/access.log
+sudo awk '{print $4, $6}' /var/log/nginx/access.log

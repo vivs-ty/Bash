@@ -3,6 +3,7 @@
 #!/bin/bash
 
 echo "Calculating the total size of all files in the current directory..."
-echo " use the command: du -a . | awk '{sum += $1} END {print sum}'"
+echo " use the command: find . -type f -exec du -b {} + | awk '{sum += $1} END {print sum}'"
 echo "Results:"
-du -a . | awk '{sum += $1} END {print sum}' 
+find . -type f -exec du -b {} + | awk '{sum += $1} END {print sum}' 
+# Using `find` prevents `du` from double-counting the directories themselves.

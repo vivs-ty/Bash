@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Sorting the lines of the file alphabetically..."
-echo " use the command: sort /path/to/file.txt "
+echo " use the command: sort -o /path/to/file.txt /path/to/file.txt "
 echo "Results:"
-sort /path/to/file.txt
+sort -o /path/to/file.txt /path/to/file.txt

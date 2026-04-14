@@ -7,3 +7,5 @@ echo "Inserting a line at the beginning of the file using sed..."
 echo " use the command: sed -i '1i This is the new line.' /path/to/file.txt "
 echo "Results:"
 sed -i '1i This is the new line.' /path/to/file.txt 
+# Note: If running on macOS, use: sed -i '' '1i\
+# This is the new line.' /path/to/file.txt

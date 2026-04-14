@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Applying a patch file to the configuration file..."
-echo " use the command: patch /path/to/configuration.conf /path/to/patchfile.patch "
+echo " use the command: patch /path/to/configuration.conf < /path/to/patchfile.patch "
 echo "Results:"
-patch /path/to/configuration.conf /path/to/patchfile.patch 
+patch /path/to/configuration.conf < /path/to/patchfile.patch

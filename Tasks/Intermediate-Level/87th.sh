@@ -6,4 +6,4 @@
 echo "Compressing the file using gzip..."
 echo " use the command: gzip /path/to/file.txt "
 echo "Results:"
-gzip /path/to/file.txt  
+gzip /path/to/file.txt

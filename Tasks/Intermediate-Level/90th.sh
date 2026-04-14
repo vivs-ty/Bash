@@ -6,3 +6,4 @@ echo "Appending a line at the end of the file using sed..."
 echo " use the command: sed -i '$a This is the appended line.' /path/to/file.txt "
 echo "Results:"
 sed -i '$a This is the appended line.' /path/to/file.txt
+

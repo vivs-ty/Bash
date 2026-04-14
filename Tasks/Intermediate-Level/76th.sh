@@ -6,3 +6,4 @@ echo "Replacing all occurrences of 'localhost' with '127.0.0.1' in the configura
 echo " use the command: sed -i 's/localhost/127.0.0.1/g' /path/to/config.conf "
 echo "Results:"
 sed -i 's/localhost/127.0.0.1/g' /path/to/config.conf
+

@@ -3,6 +3,6 @@
 #!/bin/bash
 
 echo "Counting the occurrences of each HTTP status code in the Nginx access log..."
-echo " use the command: awk '{print $9}' /var/log/nginx/access.log "
+echo " use the command: sudo awk '{print $9}' /var/log/nginx/access.log | sort | uniq -c | sort -nr "
 echo "Results:"
-awk '{print $9}' /var/log/nginx/access.log | sort | uniq -c | sort -nr
+sudo awk '{print $9}' /var/log/nginx/access.log | sort | uniq -c | sort -nr

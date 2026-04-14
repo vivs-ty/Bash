@@ -3,6 +3,8 @@
 #!/bin/bash
 
 echo "Removing duplicate lines from the file..."
-echo " use the command: uniq /path/to/file.txt "
+echo " use the command: sort -u /path/to/file.txt -o /path/to/file.txt "
 echo "Results:"
-uniq /path/to/file.txt
+sort -u /path/to/file.txt -o /path/to/file.txt
+# Sort must be used first because `uniq` only removes adjacent duplicates. 
+# `sort -u` accomplishes both sorting and removing duplicates.
