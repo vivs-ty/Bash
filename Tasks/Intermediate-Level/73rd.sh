@@ -6,3 +6,4 @@ echo "Finding and deleting all .tmp files recursively..."
 echo " use the command: find . -type f -name '*.tmp' -delete"
 echo "Results:"
 find . -type f -name '*.tmp' -delete
+
