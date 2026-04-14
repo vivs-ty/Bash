@@ -36,16 +36,14 @@ check_status() {
 }
 
 start_server() {
-    echo -n "Enter server name to start: "
-    read server
+    read -r -p "Enter server name to start: " server
     echo "Starting $server..."
     echo "Server $server started successfully!"
     read -p "Press Enter to continue..."
 }
 
 stop_server() {
-    echo -n "Enter server name to stop: "
-    read server
+    read -r -p "Enter server name to stop: " server
     echo "Stopping $server..."
     echo "Server $server stopped successfully!"
     read -p "Press Enter to continue..."

@@ -42,7 +42,8 @@ while getopts "hvn:p:r:" opt; do
             REGION="$OPTARG"
             echo "Region: $REGION"
             ;;
-        \?)
+        ?)
+            echo "Invalid option: -$OPTARG" >&2
             usage
             ;;
     esac

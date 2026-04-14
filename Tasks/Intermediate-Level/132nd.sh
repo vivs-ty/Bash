@@ -6,13 +6,12 @@ MAX_RETRIES=3
 RETRY_DELAY=2
 
 retry_command() {
-    local cmd="$1"
     local attempt=1
     
     while [ $attempt -le $MAX_RETRIES ]; do
-        echo "Attempt $attempt of $MAX_RETRIES: Running '$cmd'"
+        echo "Attempt $attempt of $MAX_RETRIES: Running '$*'"
         
-        if eval "$cmd"; then
+        if "$@"; then
             echo "Command succeeded on attempt $attempt"
             return 0
         else
