@@ -3,7 +3,7 @@
 #!/bin/bash
 
 echo "Enter the username:"
-read username
+read -r username
 echo "Listing all running processes owned by $username..."
-ps -u $username
+ps -u "$username"
 echo "All running processes owned by $username are listed above."
