@@ -3,16 +3,12 @@
 #!/bin/bash
 
 echo "Enter the name of the process you want to kill:"
-read process_name
+read -r process_name
 echo "Killing all processes with the name $process_name..."
-pids=$(pgrep $process_name)
-if [ -z "$pids" ]; then
-    echo "No processes named $process_name are running."
+
+Using pkill is the standard, safer way to kill by name rather than piping pgrep to kill.
+if pkill "$process_name"; then
+echo "All processes named $process_name have been killed successfully."
 else
-    kill $pids
-    if [ $? -eq 0 ]; then
-        echo "All processes named $process_name have been killed successfully."
-    else
-        echo "Failed to kill some processes named $process_name. Please check if the process name is correct and if you have the necessary permissions."
-    fi
+echo "Failed to kill some or all processes named $process_name. No such process is running, or you lack permissions. Please check the process name and your permissions."
 fi
