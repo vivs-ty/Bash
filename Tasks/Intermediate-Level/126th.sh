@@ -7,5 +7,8 @@ echo "This means if any command returns a non-zero exit code, the script will st
 echo "---------------------------------------------"
 set -e
 echo "This command will succeed."
-ls non_existent_file.txt  # This command will fail and cause the script to exit immediately
-echo "This command will not be executed due to the previous error."
+
+# Redirecting stderr to /dev/null to hide the system error, but the exit code will still be caught by set -e
+ls non_existent_file.txt 2>/dev/null
+
+echo "This command will NOT be executed due to the previous error."

@@ -2,6 +2,9 @@
 
 #!/bin/bash
 
+# Ensure the directory exists
+mkdir -p instances/
+
 echo "Simulating starting an instance by creating an empty file named 'instance1' in the 'instances' directory:"
 echo "command used for creating file : touch instances/instance1"
 echo "---------------------------------------------"

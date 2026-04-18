@@ -2,6 +2,10 @@
 
 #!/bin/bash
 
+# Setup a simulated environment so the copy command doesn't fail
+mkdir -p app_source app_target
+touch app_source/app_code.py app_source/config.yml
+
 echo "Simulating deploying an application by copying files from 'app_source' to 'app_target' directory:"
 echo "command used for copying files : cp -r app_source/* app_target/"
 echo "---------------------------------------------"

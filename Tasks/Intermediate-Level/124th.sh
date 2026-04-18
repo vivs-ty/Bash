@@ -3,10 +3,10 @@
 #!/bin/bash
 
 echo "Simulating getting the status of an instance by checking if the file named 'instance1' exists in the 'instances' directory:"
-echo "command used for checking file existence : [ -f instances/instance1 ] && echo 'Instance is running' || echo 'Instance is stopped'"
+echo "command used for checking file existence : [ -f instances/instance1 ]"
 echo "---------------------------------------------"
 if [ -f instances/instance1 ]; then
-    echo "Instance is running (file exists)."
+echo "Instance is running (file exists)."
 else
-    echo "Instance is stopped (file does not exist)."
+echo "Instance is stopped (file does not exist)."
 fi
