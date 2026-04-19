@@ -18,16 +18,16 @@ log_error() {
     echo "[$timestamp] ERROR: $message" >> "$LOG_FILE"
 }
 
-echo "Starting script with error logging..."
+echo "Initializing script with error logging enabled..."
 
-log_message "Script started"
+log_message "Script execution started."
 
 if [ ! -d "/tmp" ]; then
-    log_error "Directory /tmp does not exist"
+    log_error "The /tmp directory does not exist."
     exit 1
 fi
 
-log_message "Successfully verified /tmp directory exists"
-log_message "Script completed successfully"
+log_message "Verified that the /tmp directory exists."
+log_message "Script execution completed successfully."
 
-echo "Script completed. Check $LOG_FILE and $ERROR_LOG for details."
+echo "Script completed. Please review $LOG_FILE and $ERROR_LOG for detailed logs."
