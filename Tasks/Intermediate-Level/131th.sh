@@ -2,12 +2,32 @@
 
 #!/bin/bash
 
-echo "This is a sample script that demonstrates error logging." >&2
-echo "This is an error message that will be logged." >&2
-echo "This is another error message that will be logged." >&2
-echo "This is a normal message that will not be logged."
-# Redirect standard error to a log file
-exec 2>>error.log
-echo "This is an error message that will be logged to the file." >&2
-echo "This is another error message that will be logged to the file." >&2
-echo "This is a normal message that will not be logged to the file."
+LOG_FILE="script.log"
+ERROR_LOG="error.log"
+
+log_message() {
+    local message="$1"
+    local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+    echo "[$timestamp] $message" >> "$LOG_FILE"
+}
+
+log_error() {
+    local message="$1"
+    local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+    echo "[$timestamp] ERROR: $message" >> "$ERROR_LOG"
+    echo "[$timestamp] ERROR: $message" >> "$LOG_FILE"
+}
+
+echo "Starting script with error logging..."
+
+log_message "Script started"
+
+if [ ! -d "/tmp" ]; then
+    log_error "Directory /tmp does not exist"
+    exit 1
+fi
+
+log_message "Successfully verified /tmp directory exists"
+log_message "Script completed successfully"
+
+echo "Script completed. Check $LOG_FILE and $ERROR_LOG for details."
