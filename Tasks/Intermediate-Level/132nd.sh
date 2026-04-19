@@ -2,25 +2,36 @@
 
 #!/bin/bash
 
-echo "This script demonstrates a retry mechanism for a potentially failing command."
-# Function to execute a command with retries
+MAX_RETRIES=3
+RETRY_DELAY=2
+
 retry_command() {
-    local retries=3
-    local count=0
-    local delay=2 # Delay in seconds between retries
-    while [ $count -lt $retries ]; do
-        # Simulate a command that may fail (replace with actual command)
-        if [ $((RANDOM % 2)) -eq 0 ]; then
-            echo "Command succeeded."
+    local attempt=1
+    
+    while [ $attempt -le $MAX_RETRIES ]; do
+        echo "Attempt $attempt of $MAX_RETRIES: Running '$*'"
+        
+        if "$@"; then
+            echo "Command succeeded on attempt $attempt"
             return 0
         else
-            echo "Command failed. Retrying in $delay seconds..."
-            sleep $delay
-            ((count++))
+            echo "Command failed on attempt $attempt"
+            if [ $attempt -lt $MAX_RETRIES ]; then
+                echo "Waiting $RETRY_DELAY seconds before retry..."
+                sleep $RETRY_DELAY
+            fi
         fi
+        
+        attempt=$((attempt + 1))
     done
-    echo "Command failed after $retries attempts."
+    
+    echo "Command failed after $MAX_RETRIES attempts"
     return 1
 }
-# Call the retry function
-retry_command
+
+echo "Testing retry mechanism with a failing command..."
+retry_command "ls /nonexistent_directory_12345"
+
+echo ""
+echo "Testing retry mechanism with a successful command..."
+retry_command "echo 'Success!'"
