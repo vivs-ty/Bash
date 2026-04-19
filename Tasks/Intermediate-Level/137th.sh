@@ -5,62 +5,62 @@
 show_menu() {
     clear
     echo "=================================="
-    echo "     Cloud Server Manager"
+    echo "      Cloud Server Manager"
     echo "=================================="
-    echo "1. List running servers"
-    echo "2. Check server status"
-    echo "3. Start a server"
-    echo "4. Stop a server"
-    echo "5. View system info"
-    echo "6. Exit"
+    echo "1. Display all running servers"
+    echo "2. Check server health status"
+    echo "3. Initialize a new server"
+    echo "4. Terminate an existing server"
+    echo "5. Display system diagnostics"
+    echo "6. Exit application"
     echo "=================================="
-    echo -n "Enter your choice [1-6]: "
+    echo -n "Please enter your selection [1-6]: "
 }
 
 list_servers() {
-    echo "Listing all servers..."
-    echo "  server-1 (running)"
-    echo "  server-2 (running)"
-    echo "  server-3 (stopped)"
-    echo "  server-4 (running)"
-    read -p "Press Enter to continue..."
+    echo "Retrieving the list of all active servers..."
+    echo "  server-1 (Running)"
+    echo "  server-2 (Running)"
+    echo "  server-3 (Stopped)"
+    echo "  server-4 (Running)"
+    read -r -p "Press Enter to return to the main menu..."
 }
 
 check_status() {
-    echo "Checking server status..."
-    echo "  server-1: running - CPU: 45% - Memory: 2.1GB"
-    echo "  server-2: running - CPU: 78% - Memory: 4.5GB"
-    echo "  server-3: stopped"
-    echo "  server-4: running - CPU: 12% - Memory: 1.2GB"
-    read -p "Press Enter to continue..."
+    echo "Polling the health status of all servers..."
+    echo "  server-1: Running - CPU: 45% - Memory: 2.1GB"
+    echo "  server-2: Running - CPU: 78% - Memory: 4.5GB"
+    echo "  server-3: Stopped"
+    echo "  server-4: Running - CPU: 12% - Memory: 1.2GB"
+    read -r -p "Press Enter to return to the main menu..."
 }
 
 start_server() {
-    read -r -p "Enter server name to start: " server
-    echo "Starting $server..."
-    echo "Server $server started successfully!"
-    read -p "Press Enter to continue..."
+    read -r -p "Enter the hostname of the server you wish to start: " server
+    echo "Initiating boot sequence for $server..."
+    echo "Server $server has been started successfully."
+    read -r -p "Press Enter to return to the main menu..."
 }
 
 stop_server() {
-    read -r -p "Enter server name to stop: " server
-    echo "Stopping $server..."
-    echo "Server $server stopped successfully!"
-    read -p "Press Enter to continue..."
+    read -r -p "Enter the hostname of the server you wish to terminate: " server
+    echo "Initiating shutdown sequence for $server..."
+    echo "Server $server has been stopped successfully."
+    read -r -p "Press Enter to return to the main menu..."
 }
 
 show_sysinfo() {
-    echo "System Information:"
+    echo "System Diagnostics:"
     echo "  Hostname: $(hostname)"
-    echo "  Uptime: $(uptime -p)"
-    echo "  Disk Usage: $(df -h / | tail -1 | awk '{print $5}') used"
-    echo "  Memory: $(free -h | grep Mem | awk '{print $3 "/" $2}')"
-    read -p "Press Enter to continue..."
+    echo "  System Uptime: $(uptime -p)"
+    echo "  Root Disk Usage: $(df -h / | tail -1 | awk '{print $5}') utilized"
+    echo "  Memory Utilization: $(free -h | grep Mem | awk '{print $3 " / " $2}')"
+    read -r -p "Press Enter to return to the main menu..."
 }
 
 while true; do
     show_menu
-    read choice
+    read -r choice
     
     case $choice in
         1) list_servers ;;
@@ -68,7 +68,7 @@ while true; do
         3) start_server ;;
         4) stop_server ;;
         5) show_sysinfo ;;
-        6) echo "Goodbye!"; exit 0 ;;
-        *) echo "Invalid option!"; sleep 1 ;;
+        6) echo "Exiting application. Goodbye!"; exit 0 ;;
+        *) echo "Invalid selection. Please try again."; sleep 1 ;;
     esac
 done

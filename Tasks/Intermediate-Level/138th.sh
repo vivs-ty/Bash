@@ -2,20 +2,20 @@
 
 #!/bin/bash
 
-echo "=== Batch File Processing Script ==="
+echo "=== Batch File and Resource Processing Utility ==="
 echo
 
 TEMP_DIR="/tmp/batch_test_$$"
 mkdir -p "$TEMP_DIR"
 
-for i in 1 2 3 4 5; do
+for i in {1..5}; do
     echo "server-$i" > "$TEMP_DIR/server_$i.txt"
 done
 
-echo "Created 5 test files in $TEMP_DIR"
+echo "Successfully generated 5 temporary test files within $TEMP_DIR."
 echo
 
-echo "Processing files..."
+echo "Evaluating file contents..."
 echo "-----------------------------------"
 
 for file in "$TEMP_DIR"/*.txt; do
@@ -24,30 +24,30 @@ for file in "$TEMP_DIR"/*.txt; do
         size=$(wc -c < "$file")
         content=$(cat "$file")
         
-        echo "File: $filename"
-        echo "  Size: $size bytes"
-        echo "  Content: $content"
+        echo "Processing File: $filename"
+        echo "  Allocated Size: $size bytes"
+        echo "  Internal Content: $content"
         
         if [ "$size" -gt 0 ]; then
-            echo "  Status: Non-empty"
+            echo "  Data Status: Populated (Non-empty)"
         else
-            echo "  Status: Empty"
+            echo "  Data Status: Empty"
         fi
         echo
     fi
 done
 
 echo "-----------------------------------"
-echo "Processing complete!"
+echo "File evaluation process completed."
 echo
 
-echo "Demonstrating resource loop (simulated servers)..."
+echo "Simulating health checks across multiple infrastructure resources..."
 for server in web-01 web-02 web-03 db-01 cache-01; do
-    echo "Checking health of $server..."
-    echo "  ✓ $server is healthy"
+    echo "Pinging $server to verify operational health..."
+    echo "  ✓ $server is responding and healthy."
 done
 
 echo
-echo "Cleaning up test files..."
+echo "Purging temporary test files..."
 rm -rf "$TEMP_DIR"
-echo "Done!"
+echo "Operation completely finished."

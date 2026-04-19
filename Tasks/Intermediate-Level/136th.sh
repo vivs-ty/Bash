@@ -4,11 +4,11 @@
 
 usage() {
     echo "Usage: $0 [-h] [-v] [-n name] [-p port] [-r region]"
-    echo "  -h         Display this help message"
-    echo "  -v         Enable verbose mode"
-    echo "  -n name    Specify server name"
-    echo "  -p port    Specify port number (default: 80)"
-    echo "  -r region  Specify AWS region (default: us-east-1)"
+    echo "  -h         Display this instructional help message."
+    echo "  -v         Enable verbose logging mode."
+    echo "  -n name    Specify the target server name."
+    echo "  -p port    Specify the network port number (Default: 80)."
+    echo "  -r region  Specify the target AWS region (Default: us-east-1)."
     exit 1
 }
 
@@ -24,26 +24,26 @@ while getopts "hvn:p:r:" opt; do
             ;;
         v)
             VERBOSE=1
-            echo "Verbose mode enabled"
+            echo "Verbose mode has been enabled."
             ;;
         n)
             SERVER_NAME="$OPTARG"
-            echo "Server name: $SERVER_NAME"
+            echo "Server name set to: $SERVER_NAME"
             ;;
         p)
             PORT="$OPTARG"
             if ! [[ "$PORT" =~ ^[0-9]+$ ]] || [ "$PORT" -lt 1 ] || [ "$PORT" -gt 65535 ]; then
-                echo "Error: Invalid port number"
+                echo "Error: The provided port number is invalid."
                 exit 1
             fi
-            echo "Port: $PORT"
+            echo "Port number set to: $PORT"
             ;;
         r)
             REGION="$OPTARG"
-            echo "Region: $REGION"
+            echo "Region set to: $REGION"
             ;;
         ?)
-            echo "Invalid option: -$OPTARG" >&2
+            echo "Error: Invalid option provided (-$OPTARG)." >&2
             usage
             ;;
     esac
@@ -52,13 +52,13 @@ done
 shift $((OPTIND -1))
 
 echo
-echo "=== Final Configuration ==="
-echo "Server Name: ${SERVER_NAME:-not set}"
+echo "=== Final Deployment Configuration ==="
+echo "Server Name: ${SERVER_NAME:-[Not Configured]}"
 echo "Port: $PORT"
 echo "Region: $REGION"
-echo "Verbose: $VERBOSE"
+echo "Verbose Mode: $VERBOSE"
 
-if [ $VERBOSE -eq 1 ]; then
+if [ $VERBOSE -eq 1 ] && [ $# -gt 0 ]; then
     echo
-    echo "Additional arguments: $@"
+    echo "Additional arguments detected: $*"
 fi
