@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-SCRIPT_NAME="deployment.sh"
+SCRIPT_NAME="deployment_pipeline.sh"
 EMAIL_TO="admin@example.com"
 EMAIL_FROM="noreply@example.com"
 
@@ -12,29 +12,31 @@ send_email() {
     
     if command -v mail &> /dev/null; then
         echo "$body" | mail -s "$subject" -r "$EMAIL_FROM" "$EMAIL_TO"
-        echo "Email sent successfully to $EMAIL_TO"
+        echo "Notification successfully routed to $EMAIL_TO via standard mail."
     elif command -v sendmail &> /dev/null; then
         echo -e "To: $EMAIL_TO\nSubject: $subject\n\n$body" | sendmail -f "$EMAIL_FROM" "$EMAIL_TO"
-        echo "Email sent via sendmail to $EMAIL_TO"
+        echo "Notification successfully routed to $EMAIL_TO via sendmail."
     else
-        echo "Email not sent (mail command not available)"
-        echo "Email would be sent to: $EMAIL_TO"
-        echo "Subject: $subject"
-        echo "Body:"
+        echo "WARNING: The local mail utility is unavailable. Notification delivery bypassed."
+        echo "--- Notification Draft Output ---"
+        echo "Target Address: $EMAIL_TO"
+        echo "Email Subject: $subject"
+        echo "Email Payload:"
         echo "$body"
+        echo "---------------------------------"
     fi
 }
 
 notify_success() {
     local message="$1"
     local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    local subject="[SUCCESS] $SCRIPT_NAME completed"
-    local body="Script: $SCRIPT_NAME
-Status: SUCCESS
-Timestamp: $timestamp
-Message: $message
+    local subject="[SUCCESS] Execution Report: $SCRIPT_NAME"
+    local body="Script Routine: $SCRIPT_NAME
+Final Status: SUCCESS
+Completion Time: $timestamp
+System Message: $message
 
-The script has completed successfully."
+The specified script operations concluded without any errors."
     
     send_email "$subject" "$body"
 }
@@ -42,26 +44,26 @@ The script has completed successfully."
 notify_failure() {
     local message="$1"
     local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    local subject="[FAILURE] $SCRIPT_NAME failed"
-    local body="Script: $SCRIPT_NAME
-Status: FAILED
-Timestamp: $timestamp
-Message: $message
+    local subject="[CRITICAL FAILURE] Execution Report: $SCRIPT_NAME"
+    local body="Script Routine: $SCRIPT_NAME
+Final Status: FAILED
+Failure Time: $timestamp
+System Message: $message
 
-Please check the logs for details."
+Immediate attention is required. Please review the system logs for detailed error metrics."
     
     send_email "$subject" "$body"
 }
 
-echo "=== Email Notification Demo ==="
+echo "=== System Email Notification Utility ==="
 echo
 
-echo "Test 1: Sending success notification..."
-notify_success "Backup completed successfully"
+echo "Initiating Test Phase 1: Transmitting a success notification..."
+notify_success "The routine daily database backup concluded successfully."
 
 echo
-echo "Test 2: Simulating a failure..."
-notify_failure "Connection to database timed out"
+echo "Initiating Test Phase 2: Simulating a critical failure notification..."
+notify_failure "The connection to the primary backend database timed out."
 
 echo
-echo "Demo complete!"
+echo "Notification utility demonstration completed."

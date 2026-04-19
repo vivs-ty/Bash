@@ -6,32 +6,32 @@ MAX_RETRIES=3
 RETRY_DELAY=2
 
 retry_command() {
-    local attempt=1
+local attempt=1
+
+while [ $attempt -le $MAX_RETRIES ]; do
+    echo "Attempt $attempt of $MAX_RETRIES: Executing '$*'"
     
-    while [ $attempt -le $MAX_RETRIES ]; do
-        echo "Attempt $attempt of $MAX_RETRIES: Running '$*'"
-        
-        if "$@"; then
-            echo "Command succeeded on attempt $attempt"
-            return 0
-        else
-            echo "Command failed on attempt $attempt"
-            if [ $attempt -lt $MAX_RETRIES ]; then
-                echo "Waiting $RETRY_DELAY seconds before retry..."
-                sleep $RETRY_DELAY
-            fi
+    if "$@"; then
+        echo "Command succeeded on attempt $attempt."
+        return 0
+    else
+        echo "Command failed on attempt $attempt."
+        if [ $attempt -lt $MAX_RETRIES ]; then
+            echo "Waiting for $RETRY_DELAY seconds before retrying..."
+            sleep $RETRY_DELAY
         fi
-        
-        attempt=$((attempt + 1))
-    done
+    fi
     
-    echo "Command failed after $MAX_RETRIES attempts"
-    return 1
+    attempt=$((attempt + 1))
+done
+
+echo "Command failed permanently after $MAX_RETRIES attempts."
+return 1
 }
 
-echo "Testing retry mechanism with a failing command..."
-retry_command "ls /nonexistent_directory_12345"
+echo "Testing the retry mechanism with a command designed to fail..."
+retry_command ls /nonexistent_directory_12345
 
 echo ""
-echo "Testing retry mechanism with a successful command..."
-retry_command "echo 'Success!'"
+echo "Testing the retry mechanism with a command designed to succeed..."
+retry_command echo "Success!"
