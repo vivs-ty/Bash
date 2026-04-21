@@ -3,18 +3,17 @@
 #!/bin/bash
 
 echo "Starting database backup to Google Cloud Storage..."
-echo "Please enter the name of your Cloud SQL instance:"
-read INSTANCE_NAME
-echo "Please enter the name of the database you want to back up:"
-read DATABASE_NAME
-echo "Please enter the name of the Cloud Storage bucket where you want to store the backup:"
-read BUCKET_NAME
-# Create a temporary file to store the backup
-BACKUP_FILE="/tmp/${DATABASE_NAME}_backup.sql"
-# Export the database to a SQL file
-gcloud sql export sql $INSTANCE_NAME gs://$BUCKET_NAME/$DATABASE_NAME_backup.sql
+read -r -p "Please enter the name of your Cloud SQL instance: " INSTANCE_NAME
+read -r -p "Please enter the name of the database you want to back up: " DATABASE_NAME
+read -r -p "Please enter the name of the Cloud Storage bucket (without gs://): " BUCKET_NAME
+
+# Export the database directly to a SQL file in the GCS bucket
+echo "Exporting database $DATABASE_NAME to gs://$BUCKET_NAME/${DATABASE_NAME}_backup.sql..."
+gcloud sql export sql "$INSTANCE_NAME" "gs://$BUCKET_NAME/${DATABASE_NAME}_backup.sql" \
+    --database="$DATABASE_NAME"
+
 if [ $? -eq 0 ]; then
-    echo "Database backup successful! Backup stored in gs://$BUCKET_NAME/$DATABASE_NAME_backup.sql"
+    echo "Database backup successful! Backup stored in gs://$BUCKET_NAME/${DATABASE_NAME}_backup.sql"
 else
-    echo "Database backup failed. Please check the error messages above and try again."
+    echo "Database backup failed. Please check the error messages above."
 fi
