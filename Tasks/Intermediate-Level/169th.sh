@@ -3,9 +3,13 @@
 #!/bin/bash
 
 echo "Running Terraform command with error handling..."
+
+# The if statement directly evaluates the exit status ($?) of the command
 if terraform apply --auto-approve; then
-    echo "Terraform command executed successfully."
+    echo "SUCCESS: Terraform command executed successfully."
 else
-    echo "Error: Terraform command failed. Please check the output for details."
+    # This block catches any non-zero exit code
+    echo "ERROR: Terraform command failed."
+    echo "Please check your .tf files and permissions, then try again."
     exit 1
 fi

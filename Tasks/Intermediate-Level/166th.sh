@@ -3,33 +3,35 @@
 #!/bin/bash
 
 echo "Generating Terraform variable files based on environment..."
-echo "Enter the environment name (dev, staging, prod):"
-read environment
+read -r -p "Enter the environment name (dev, staging, prod): " environment
+
 case "$environment" in
     dev)
-        cat > dev.tfvars <<EOL
+        cat > dev.tfvars <<EOF
 # Development environment variables
 instance_type = "t2.micro"
-EOL
+environment   = "dev"
+EOF
         echo "dev.tfvars file generated."
         ;;
     staging)
-        cat > staging.tfvars <<EOL
+        cat > staging.tfvars <<EOF
 # Staging environment variables
 instance_type = "t2.small"
-EOL
+environment   = "staging"
+EOF
         echo "staging.tfvars file generated."
         ;;
     prod)
-        cat > prod.tfvars <<EOL
+        cat > prod.tfvars <<EOF
 # Production environment variables
 instance_type = "t2.medium"
-EOL
+environment   = "prod"
+EOF
         echo "prod.tfvars file generated."
         ;;
     *)
-        echo "Invalid environment name. Please enter dev, staging, or prod."
+        echo "Error: Invalid environment name. Please enter dev, staging, or prod."
         exit 1
         ;;
 esac
-echo "Terraform variable file generated for $environment environment."

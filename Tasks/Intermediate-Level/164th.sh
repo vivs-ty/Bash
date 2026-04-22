@@ -2,12 +2,17 @@
 
 #!/bin/bash
 
-echo "Destroying Terraform managed infrastructure..."
-echo "This will permanently delete all resources managed by Terraform. Are you sure? (yes/no)"
-read confirmation
+echo "WARNING: Destroying Terraform managed infrastructure..."
+read -r -p "This will permanently delete all resources managed by Terraform. Are you sure? (yes/no): " confirmation
+
 if [[ "$confirmation" != "yes" ]]; then
-    echo "Aborting Terraform destroy."
+    echo "Aborting Terraform destroy operation."
     exit 1
 fi
-terraform destroy --auto-approve
-echo "Terraform infrastructure destroyed." 
+
+if terraform destroy --auto-approve; then
+    echo "Terraform infrastructure destroyed successfully."
+else
+    echo "Error: Failed to destroy infrastructure."
+    exit 1
+fi

@@ -2,24 +2,36 @@
 
 #!/bin/bash
 
-echo "Enter the environment name (dev, staging, prod):"
-read environment
+echo "Generating Terraform variable files based on environment..."
+read -r -p "Enter the environment name (dev, staging, prod): " environment
+
 case "$environment" in
     dev)
-        echo "Applying Terraform configuration for development environment..."
-        terraform apply -var-file=dev.tfvars --auto-approve
+        cat > dev.tfvars <<EOF
+# Development environment variables
+instance_type = "t2.micro"
+environment   = "dev"
+EOF
+        echo "dev.tfvars file generated."
         ;;
     staging)
-        echo "Applying Terraform configuration for staging environment..."
-        terraform apply -var-file=staging.tfvars --auto-approve
+        cat > staging.tfvars <<EOF
+# Staging environment variables
+instance_type = "t2.small"
+environment   = "staging"
+EOF
+        echo "staging.tfvars file generated."
         ;;
     prod)
-        echo "Applying Terraform configuration for production environment..."
-        terraform apply -var-file=prod.tfvars --auto-approve
+        cat > prod.tfvars <<EOF
+# Production environment variables
+instance_type = "t2.medium"
+environment   = "prod"
+EOF
+        echo "prod.tfvars file generated."
         ;;
     *)
-        echo "Invalid environment name. Please enter dev, staging, or prod."
+        echo "Error: Invalid environment name. Please enter dev, staging, or prod."
         exit 1
         ;;
 esac
-echo "Terraform configuration applied for $environment environment."
