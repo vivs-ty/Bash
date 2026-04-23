@@ -2,21 +2,30 @@
 
 #!/bin/bash
 
-echo "Enter the API endpoint URL:"
-read url
-echo "Enter the authentication method (basic/api):"
-read auth_method
+read -r -p "Enter the API endpoint URL: " url
+read -r -p "Enter the authentication method (basic/api): " auth_method
+
 if [ "$auth_method" == "basic" ]; then
-    echo "Enter username:"
-    read username
-    echo "Enter password:"
-    read -s password
-    response=$(curl -w "%{http_code}" -o /dev/null -s -u "$username:$password" "$url")
+    read -r -p "Enter username: " username
+    read -r -s -p "Enter password: " password
+    echo "" # Add a newline after silent password input
+    
+    echo "Authenticating via Basic Auth..."
+    response=$(curl -s -w "%{http_code}" -o /dev/null -u "$username:$password" "$url")
+    
 elif [ "$auth_method" == "api" ]; then
-    echo "Enter API key:"
-    read api_key
-    response=$(curl -w "%{http_code}" -o /dev/null -s -H "Authorization: Bearer $api_key" "$url")
+    read -r -s -p "Enter API Key / Bearer Token: " api_key
+    echo "" # Add a newline after silent input
+    
+    echo "Authenticating via Bearer Token..."
+    response=$(curl -s -w "%{http_code}" -o /dev/null -H "Authorization: Bearer $api_key" "$url")
 else
-    echo "Invalid authentication method."
+    echo "Invalid authentication method specified."
     exit 1
+fi
+
+if [[ "$response" =~ ^2 ]]; then
+    echo "Authentication successful! (HTTP status code: $response)"
+else
+    echo "Authentication failed or access denied. (HTTP status code: $response)"
 fi

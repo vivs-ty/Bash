@@ -2,15 +2,17 @@
 
 #!/bin/bash
 
-echo "Enter the domain name to query:"
-read domain
+read -r -p "Enter the domain name to query: " domain
+
 if command -v dig &> /dev/null; then
-    echo "Using dig to query DNS records for $domain:"
-    dig "$domain" +noall +answer
+    echo "Using 'dig' to query DNS records for $domain:"
+    echo "-------------------------------------------"
+    dig "$domain" +short
 elif command -v nslookup &> /dev/null; then
-    echo "Using nslookup to query DNS records for $domain:"
+    echo "Using 'nslookup' to query DNS records for $domain:"
+    echo "------------------------------------------------"
     nslookup "$domain"
 else
-    echo "Neither dig nor nslookup is available on this system."
+    echo "Error: Neither 'dig' nor 'nslookup' is installed on this system."
     exit 1
 fi

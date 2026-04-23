@@ -2,13 +2,15 @@
 
 #!/bin/bash
 
-echo "Enter the API endpoint URL:"
-read url
-echo "Enter the JSON data to send (e.g., {\"key\":\"value\"}):"
-read json_data
+read -r -p "Enter the API endpoint URL: " url
+read -r -p "Enter the JSON data to send (e.g., {\"key\":\"value\"}): " json_data
+
+echo "Sending POST request..."
 response=$(curl -s -w "%{http_code}" -o /dev/null -X POST -H "Content-Type: application/json" -d "$json_data" "$url")
-if [ "$response" -eq 200 ]; then
-    echo "POST request successful with status code: $response"
+
+# Accept any 2xx success status code (200 OK, 201 Created, etc.)
+if [[ "$response" =~ ^2 ]]; then
+    echo "POST request successful! (HTTP status code: $response)"
 else
-    echo "Failed to send POST request. HTTP status code: $response"
+    echo "Failed to send POST request. (HTTP status code: $response)"
 fi

@@ -2,17 +2,25 @@
 
 #!/bin/bash
 
-echo "Monitoring network interface statistics..."
+echo "Initializing network interface monitor..."
+sleep 1
+
 while true; do
+    clear # Clears the screen to create a dashboard effect
+    echo "=== Network Interface Statistics ==="
     echo "Timestamp: $(date)"
-    if command -v ifconfig &> /dev/null; then
-        ifconfig -a
-    elif command -v ip &> /dev/null; then
+    echo "----------------------------------------"
+    
+    if command -v ip &> /dev/null; then
         ip -s link
+    elif command -v ifconfig &> /dev/null; then
+        ifconfig -a
     else
-        echo "Neither ifconfig nor ip is available on this system."
+        echo "Error: Neither 'ip' nor 'ifconfig' is available on this system."
         exit 1
     fi
+    
     echo "----------------------------------------"
-    sleep 5
+    echo "Press Ctrl+C to exit monitoring."
+    sleep 3
 done

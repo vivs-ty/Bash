@@ -2,13 +2,17 @@
 
 #!/bin/bash
 
-echo "Enter the port number to check:"
-read port
-if command -v netstat &> /dev/null; then
-    netstat -tuln | grep ":$port " | awk '{print $7}' | cut -d'/' -f1
-elif command -v ss &> /dev/null; then
-    ss -tuln | grep ":$port " | awk '{print $6}' | cut -d',' -f2
+read -r -p "Enter the port number to investigate: " port
+
+echo "Checking for processes running on port $port..."
+echo "Note: This requires sudo privileges to view process ownership."
+
+if command -v ss &> /dev/null; then
+    # -p flag shows the process, which requires root privileges
+    sudo ss -tulnp | grep -w ":$port"
+elif command -v netstat &> /dev/null; then
+    sudo netstat -tulnp | grep -w ":$port"
 else
-    echo "Neither netstat nor ss is available on this system."
+    echo "Error: Neither 'netstat' nor 'ss' is available on this system."
     exit 1
 fi

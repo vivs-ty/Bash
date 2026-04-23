@@ -2,14 +2,16 @@
 
 #!/bin/bash
 
-echo "Enter the remote host:"
-read host
-echo "Enter a list of ports to check (separated by space):"
-read -a ports
+read -r -p "Enter the remote host (IP or domain): " host
+read -r -p "Enter a list of ports to check (separated by space): " -a ports
+
+echo "Scanning ports on $host..."
+
 for port in "${ports[@]}"; do
-    if nc -z "$host" "$port" &> /dev/null; then
-        echo "Port $port is open on $host."
+    # -z scans for listening daemons, -w 2 sets a 2-second timeout
+    if nc -z -w 2 "$host" "$port" &> /dev/null; then
+        echo "  [OPEN]   Port $port is accessible."
     else
-        echo "Port $port is closed on $host."
+        echo "  [CLOSED] Port $port is closed or filtered."
     fi
 done

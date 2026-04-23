@@ -2,12 +2,15 @@
 
 #!/bin/bash
 
-echo "Listening ports on the server:"
-if command -v netstat &> /dev/null; then
-    netstat -tuln | grep LISTEN
-elif command -v ss &> /dev/null; then
-    ss -tuln | grep LISTEN
+echo "Retrieving all actively listening ports on this server..."
+echo "--------------------------------------------------------"
+
+if command -v ss &> /dev/null; then
+    # ss is the modern, faster replacement for netstat
+    ss -tuln
+elif command -v netstat &> /dev/null; then
+    netstat -tuln
 else
-    echo "Neither netstat nor ss is available on this system."
+    echo "Error: Neither 'netstat' nor 'ss' is available on this system."
     exit 1
 fi
