@@ -4,9 +4,14 @@
 
 echo "Fetching data from a public REST API..."
 response=$(curl -s -X GET "https://jsonplaceholder.typicode.com/posts/1")
+
 echo "Parsing specific data fields from the JSON response..."
+echo "----------------------------------------------------"
+
+# Use jq -r to get raw strings without quotes
 title=$(echo "$response" | jq -r '.title')
 body=$(echo "$response" | jq -r '.body')
+
 echo "Title: $title"
 echo "Body: $body"
 echo -e "\nData parsed successfully!"
