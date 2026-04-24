@@ -1,6 +1,6 @@
 # 186. Handle different HTTP response codes in your API interaction scripts.
 
-#! /bin/bash
+#!/bin/bash
 
 echo "Fetching data from the API and handling HTTP response codes..."
 response=$(curl -s -w "%{http_code}" -X GET "https://json

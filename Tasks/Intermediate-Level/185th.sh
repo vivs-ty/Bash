@@ -1,6 +1,6 @@
 # 185. Implement pagination handling when fetching data from APIs.
 
-#! /bin/bash
+#!/bin/bash
 
 echo "Fetching paginated data from the API..."
 page=1

@@ -1,6 +1,6 @@
 # 183. Send a PUT request to update a resource via an API using `curl` and `jq`.
 
-#! /bin/bash
+#!/bin/bash
 
 echo "Fetching current data from the API..."
 current_response=$(curl -s -X GET "https://jsonplaceholder.typicode.com/posts/1")
