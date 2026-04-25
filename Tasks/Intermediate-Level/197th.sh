@@ -2,15 +2,25 @@
 
 #!/bin/bash
 
-echo "This script collects error logs from a specified log file and generates a report."
-# Check if a log file is provided as an argument
 if [[ -z "$1" ]]; then
     echo "Usage: $0 <log_file>"
     exit 1
 fi
 
-log_file="$1"
+LOG_FILE="$1"
 
-# Collect error logs
-echo "Error logs from $log_file:"
-grep -i "error" "$log_file"
+if [ ! -f "$LOG_FILE" ]; then
+    echo "Error: Log file '$LOG_FILE' does not exist."
+    exit 1
+fi
+
+echo "=== Error Report for $LOG_FILE ==="
+echo "Generated at: $(date)"
+echo "----------------------------------"
+
+# Extract lines containing 'error', 'fail', or 'critical' case-insensitively
+grep -iE "error|fail|critical" "$LOG_FILE"
+
+if [ $? -ne 0 ]; then
+    echo "No errors found in the log file. System looks healthy!"
+fi

@@ -2,12 +2,15 @@
 
 #!/bin/bash
 
+# -e exits on error. -o pipefail ensures pipeline errors aren't masked by the last command.
+set -eo pipefail
 
-echo "This script demonstrates the use of 'set -o pipefail' to ensure that it exits if any command in a pipeline fails."
-# Enable pipefail option
-set -o pipefail
-# Example pipeline with a command that fails
-echo "This is a successful command." | grep "successful"
-echo "This is a failing command." | grep "failing"
-echo "This command will not be executed due to pipefail."
-echo "This is a normal message that will not be shown if the previous command fails."
+echo "Executing a successful pipeline..."
+echo "Server is active and healthy" | grep "healthy"
+
+echo "Executing a failing pipeline..."
+# grep will return an exit code of 1 because it cannot find the word "CRITICAL"
+# Without pipefail, the script would continue because the 'echo' command succeeded.
+echo "Server is running normally" | grep "CRITICAL"
+
+echo "This message will NOT be printed because the script immediately aborted."

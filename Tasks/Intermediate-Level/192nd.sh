@@ -2,12 +2,26 @@
 
 #!/bin/bash
 
-echo "Script is running. Press Ctrl+C to trigger the trap."
-# Set up a trap to catch SIGINT (Ctrl+C) and perform cleanup
-trap 'echo "SIGINT received. Performing cleanup..."; exit 1' SIGINT
+TEMP_FILE="/tmp/my_temp_file_$$.txt"
+touch "$TEMP_FILE"
+
 cleanup() {
-    echo "Performing cleanup actions..."
-    # Add any cleanup commands here, such as removing temporary files
+    echo -e "\n[Trap Triggered] Performing cleanup actions..."
+    if [ -f "$TEMP_FILE" ]; then
+        rm -f "$TEMP_FILE"
+        echo "Cleaned up temporary file: $TEMP_FILE"
+    fi
+    echo "Exiting gracefully."
+    exit 1
 }
-# Set up a trap to call the cleanup function on EXIT
-trap cleanup EXIT
+
+# Set up the trap to catch SIGINT (Ctrl+C) and standard EXIT
+trap cleanup SIGINT EXIT
+
+echo "Script is running. A temporary file was created."
+echo "Press Ctrl+C to trigger the trap and test the cleanup!"
+
+# Infinite loop to keep the script running so you can test Ctrl+C
+while true; do
+    sleep 1
+done

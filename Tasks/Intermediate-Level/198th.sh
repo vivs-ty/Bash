@@ -2,10 +2,23 @@
 
 #!/bin/bash
 
-echo "This script demonstrates the use of 'shellcheck' to statically analyze Bash scripts for potential issues."
-echo "To use 'shellcheck', you can install it using your package manager (e.g., 'sudo apt install shellcheck' on Debian-based systems) and then run it against your scripts like this:"
-echo "shellcheck your_script.sh"
-echo "This will provide you with warnings and suggestions to improve your script's quality and avoid common pitfalls."
-echo "Remember to regularly use 'shellcheck' during development to catch issues early and ensure your scripts are robust and maintainable."
-echo "This is a normal message that will always be shown."
+SCRIPT_TO_CHECK="${1:-$0}" # Defaults to checking itself if no argument is provided
 
+echo "=== Bash Static Analysis Tool ==="
+
+if command -v shellcheck &> /dev/null; then
+    echo "Running ShellCheck on $SCRIPT_TO_CHECK..."
+    echo "----------------------------------------"
+    shellcheck "$SCRIPT_TO_CHECK"
+    
+    if [ $? -eq 0 ]; then
+        echo "Success: No issues detected by ShellCheck."
+    else
+        echo "Warning: ShellCheck identified potential issues above."
+    fi
+else
+    echo "Error: 'shellcheck' is not installed."
+    echo "To install on Debian/Ubuntu: sudo apt install shellcheck"
+    echo "To install on RHEL/CentOS: sudo yum install ShellCheck"
+    echo "To install on macOS: brew install shellcheck"
+fi
