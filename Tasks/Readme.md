@@ -30,7 +30,7 @@ This challenge is designed to start from the very beginning and build confidence
 7.  [Return to the home directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/7th.sh).
 8.  [List all files and directories in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/8th.sh).
 9.  [List files with detailed information (permissions, owner, size)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/9th.sh).
-10. [List hidden files and directories]().
+10. [List hidden files and directories](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/10th.sh).
 11. Create a new directory named `cloud_scripts`.
 12. Create multiple directories at once: `infra`, `monitoring`, `deployment`.
 13. Create an empty file named `server.log`.
