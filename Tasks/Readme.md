@@ -41,16 +41,16 @@ This challenge is designed to start from the very beginning and build confidence
 18. [Rename `database.config` to `db.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/18th.sh).
 19. [Remove the empty file `server.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/19th.sh).
 20. [Remove the `backup_scripts` directory and its contents](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/20th.sh). (Use with caution!)
-21. Display the content of `app.config`.
-22. Display the first 10 lines of `server.log`.
-23. Display the last 5 lines of `db.config`.
-24. Display the content of `server.log` page by page.
-25. Search for the word "error" in `server.log`.
-26. Search for lines containing "INFO" in `app.config` (case-insensitive).
-27. Count the number of lines in `db.config`.
-28. Count the number of files in the current directory.
-29. Create a variable named `REGION` and assign it the value `us-east-1`.
-30. Print the value of the `REGION` variable.
+21. [Display the content of `app.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/21st.sh).
+22. [Display the first 10 lines of `server.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/22nd.sh).
+23. [Display the last 5 lines of `db.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/23rd.sh).
+24. [Display the content of `server.log` page by page](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/24th.sh).
+25. [Search for the word "error" in `server.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/25th.sh).
+26. [Search for lines containing "INFO" in `app.config` (case-insensitive)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/26th.sh).
+27. [Count the number of lines in `db.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/27th.sh).
+28. [Count the number of files in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/28th.sh).
+29. [Create a variable named `REGION` and assign it the value `us-east-1`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/29th.sh).
+30. [Print the value of the `REGION` variable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/30th.sh).
 31. Get user input for a server name and store it in a variable.
 32. Print a message using the server name entered by the user.
 33. Check if a file named `data.txt` exists.
