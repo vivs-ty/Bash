@@ -81,16 +81,16 @@ This challenge is designed to start from the very beginning and build confidence
 58. [Create a script that takes a filename as a command-line argument and prints its content](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/58th.sh).
 59. [Create a script that takes two numbers as arguments and prints their sum](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/59th.sh).
 60. [Redirect the output of the `ls` command to a file named `file_list.txt`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/60th.sh).
-61. Append the output of the `date` command to `file_list.txt`.
-62. Redirect the error output of a non-existent command to `error.log`.
-63. Pipe the output of `cat server.log` to `grep "warning"`.
-64. Pipe the output of `ls -l` to `grep "^-"` to list only files.
-65. Create a script that prompts the user for confirmation before deleting a file.
-66. Create a script that backs up all `.conf` files in a directory to a `backup` subdirectory.
-67. Create a script to monitor disk space and print a warning if it's below a certain threshold.
-68. Create a script to check the status of a web server using `curl`.
-69. Create a script to ping a list of IP addresses and report their reachability.
-70. Write a script that creates a user account (you might need `sudo` for this, be cautious).
+61. [Append the output of the `date` command to `file_list.txt`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/61th.sh).
+62. [Redirect the error output of a non-existent command to `error.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/62nd.sh).
+63. [Pipe the output of `cat server.log` to `grep "warning"`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/63rd.sh).
+64. [Pipe the output of `ls -l` to `grep "^-"` to list only files](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/64th.sh).
+65. [Create a script that prompts the user for confirmation before deleting a file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/65th.sh).
+66. [Create a script that backs up all `.conf` files in a directory to a `backup` subdirectory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/66th.sh).
+67. [Create a script to monitor disk space and print a warning if it's below a certain threshold](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/67th.sh).
+68. [Create a script to check the status of a web server using `curl`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/68th.sh).
+69. [Create a script to ping a list of IP addresses and report their reachability](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/69th.sh).
+70. [Write a script that creates a user account (you might need `sudo` for this, be cautious)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/70th.sh).
 
 ---
 
