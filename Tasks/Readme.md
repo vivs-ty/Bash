@@ -19,7 +19,7 @@ This challenge is designed to start from the very beginning and build confidence
 
 ## Phase 1: Basic Level (Tasks 1-70)
 
-**Understanding the Basics:**
+**[Understanding the Basics](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_1_Basic-Level):**
 
 1.  [Print "Hello, Cloud!" to the console](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/1st.sh).
 2.  [Print the current date and time](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/2nd.sh).
