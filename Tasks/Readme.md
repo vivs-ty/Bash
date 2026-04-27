@@ -71,16 +71,16 @@ This challenge is designed to start from the very beginning and build confidence
 48. [Create an `until` loop that continues until a specific file is created](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/48th.sh).
 49. [Define a function named `greet` that prints "Hello!"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/49th.sh).
 50. [Call the `greet` function](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/50th.sh).
-51. Define a function `check_file` that takes a filename as an argument and checks if it exists.
-52. Call the `check_file` function with `my_file.txt` as an argument.
-53. Create a script named `my_script.sh` that prints "Script executed!".
-54. Make `my_script.sh` executable.
-55. Run `my_script.sh`.
-56. Add the shebang line `#!/bin/bash` to `my_script.sh`.
-57. Execute `my_script.sh` using `./my_script.sh`.
-58. Create a script that takes a filename as a command-line argument and prints its content.
-59. Create a script that takes two numbers as arguments and prints their sum.
-60. Redirect the output of the `ls` command to a file named `file_list.txt`.
+51. [Define a function `check_file` that takes a filename as an argument and checks if it exists](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/51st.sh).
+52. [Call the `check_file` function with `my_file.txt` as an argument](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/52nd.sh).
+53. [Create a script named `my_script.sh` that prints "Script executed!"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/53rd.sh).
+54. [Make `my_script.sh` executable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/54th.sh).
+55. [Run `my_script.sh`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/55th.sh).
+56. [Add the shebang line `#!/bin/bash` to `my_script.sh`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/56th.sh).
+57. [Execute `my_script.sh` using `./my_script.sh`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/57th.sh).
+58. [Create a script that takes a filename as a command-line argument and prints its content](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/58th.sh).
+59. [Create a script that takes two numbers as arguments and prints their sum](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/59th.sh).
+60. [Redirect the output of the `ls` command to a file named `file_list.txt`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/60th.sh).
 61. Append the output of the `date` command to `file_list.txt`.
 62. Redirect the error output of a non-existent command to `error.log`.
 63. Pipe the output of `cat server.log` to `grep "warning"`.
