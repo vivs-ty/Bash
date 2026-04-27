@@ -31,16 +31,16 @@ This challenge is designed to start from the very beginning and build confidence
 8.  [List all files and directories in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/8th.sh).
 9.  [List files with detailed information (permissions, owner, size)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/9th.sh).
 10. [List hidden files and directories](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/10th.sh).
-11. Create a new directory named `cloud_scripts`.
-12. Create multiple directories at once: `infra`, `monitoring`, `deployment`.
-13. Create an empty file named `server.log`.
-14. Create multiple empty files: `app.config`, `database.config`.
-15. Copy `server.log` to `server.log.backup`.
-16. Copy the entire `cloud_scripts` directory to `backup_scripts`.
-17. Move `app.config` to the `infra` directory.
-18. Rename `database.config` to `db.config`.
-19. Remove the empty file `server.log`.
-20. Remove the `backup_scripts` directory and its contents. (Use with caution!)
+11. [Create a new directory named `cloud_scripts`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/11th.sh).
+12. [Create multiple directories at once: `infra`, `monitoring`, `deployment`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/12th.sh).
+13. [Create an empty file named `server.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/13th.sh).
+14. [Create multiple empty files: `app.config`, `database.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/14th.sh).
+15. [Copy `server.log` to `server.log.backup`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/15th.sh).
+16. [Copy the entire `cloud_scripts` directory to `backup_scripts`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/16th.sh).
+17. [Move `app.config` to the `infra` directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/17th.sh).
+18. [Rename `database.config` to `db.config`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/18th.sh).
+19. [Remove the empty file `server.log`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/19th.sh).
+20. [Remove the `backup_scripts` directory and its contents](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/20th.sh). (Use with caution!)
 21. Display the content of `app.config`.
 22. Display the first 10 lines of `server.log`.
 23. Display the last 5 lines of `db.config`.
