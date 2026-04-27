@@ -51,16 +51,16 @@ This challenge is designed to start from the very beginning and build confidence
 28. [Count the number of files in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/28th.sh).
 29. [Create a variable named `REGION` and assign it the value `us-east-1`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/29th.sh).
 30. [Print the value of the `REGION` variable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/30th.sh).
-31. Get user input for a server name and store it in a variable.
-32. Print a message using the server name entered by the user.
-33. Check if a file named `data.txt` exists.
-34. Check if a directory named `logs` exists.
-35. Check if a file is readable.
-36. Check if a file is writable.
-37. Check if a file is executable.
-38. Use an `if` statement to print "File exists" if `config.ini` exists.
-39. Use an `if-else` statement to print whether a given number is positive or non-positive.
-40. Use `elif` to check if a status code is 200, 404, or something else.
+31. [Get user input for a server name and store it in a variable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/31st.sh).
+32. [Print a message using the server name entered by the user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/32nd.sh).
+33. [Check if a file named `data.txt` exists](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/33rd.sh).
+34. [Check if a directory named `logs` exists](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/34th.sh).
+35. [Check if a file is readable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/35th.sh).
+36. [Check if a file is writable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/36th.sh).
+37. [Check if a file is executable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/37th.sh).
+38. [Use an `if` statement to print "File exists" if `config.ini` exists](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/38th.sh).
+39. [Use an `if-else` statement to print whether a given number is positive or non-positive](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/39th.sh).
+40. [Use `elif` to check if a status code is 200, 404, or something else](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/40th.sh).
 41. Use the `test` command to check if a string is empty.
 42. Use the `test` command to compare two numbers.
 43. Create a `for` loop to print numbers from 1 to 5.
