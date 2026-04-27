@@ -61,16 +61,16 @@ This challenge is designed to start from the very beginning and build confidence
 38. [Use an `if` statement to print "File exists" if `config.ini` exists](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/38th.sh).
 39. [Use an `if-else` statement to print whether a given number is positive or non-positive](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/39th.sh).
 40. [Use `elif` to check if a status code is 200, 404, or something else](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/40th.sh).
-41. Use the `test` command to check if a string is empty.
-42. Use the `test` command to compare two numbers.
-43. Create a `for` loop to print numbers from 1 to 5.
-44. Create a `for` loop to iterate over a list of cloud providers: AWS, Azure, GCP.
-45. Create a `for` loop to process all `.log` files in the current directory.
-46. Create a `while` loop that counts down from 10 to 1.
-47. Create a `while` loop that reads lines from a file until the end is reached.
-48. Create an `until` loop that continues until a specific file is created.
-49. Define a function named `greet` that prints "Hello!".
-50. Call the `greet` function.
+41. [Use the `test` command to check if a string is empty](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/41st.sh).
+42. [Use the `test` command to compare two numbers](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/42nd.sh).
+43. [Create a `for` loop to print numbers from 1 to 5](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/43rd.sh).
+44. [Create a `for` loop to iterate over a list of cloud providers: AWS, Azure, GCP](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/44th.sh).
+45. [Create a `for` loop to process all `.log` files in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/45th.sh).
+46. [Create a `while` loop that counts down from 10 to 1](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/46th.sh).
+47. [Create a `while` loop that reads lines from a file until the end is reached](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/47th.sh).
+48. [Create an `until` loop that continues until a specific file is created](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/48th.sh).
+49. [Define a function named `greet` that prints "Hello!"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/49th.sh).
+50. [Call the `greet` function](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/50th.sh).
 51. Define a function `check_file` that takes a filename as an argument and checks if it exists.
 52. Call the `check_file` function with `my_file.txt` as an argument.
 53. Create a script named `my_script.sh` that prints "Script executed!".
