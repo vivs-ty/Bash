@@ -21,16 +21,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Understanding the Basics:**
 
-1.  Print "Hello, Cloud!" to the console.
-2.  Print the current date and time.
-3.  Display the username of the current user.
-4.  Show the current working directory.
-5.  Navigate to the `/tmp` directory.
-6.  Go back to the previous directory.
-7.  Return to the home directory.
-8.  List all files and directories in the current directory.
-9.  List files with detailed information (permissions, owner, size).
-10. List hidden files and directories.
+1.  [Print "Hello, Cloud!" to the console](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/1st.sh).
+2.  [Print the current date and time](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/2nd.sh).
+3.  [Display the username of the current user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/3rd.sh).
+4.  [Show the current working directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/4th.sh).
+5.  [Navigate to the `/tmp` directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/5th.sh).
+6.  [Go back to the previous directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/6th.sh).
+7.  [Return to the home directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/7th.sh).
+8.  [List all files and directories in the current directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/8th.sh).
+9.  [List files with detailed information (permissions, owner, size)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_1_Basic-Level/9th.sh).
+10. [List hidden files and directories]().
 11. Create a new directory named `cloud_scripts`.
 12. Create multiple directories at once: `infra`, `monitoring`, `deployment`.
 13. Create an empty file named `server.log`.
