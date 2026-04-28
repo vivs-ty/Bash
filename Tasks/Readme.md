@@ -147,16 +147,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Environment Variables and Profiles:**
 
-111. Set an environment variable temporarily in the current shell.
-112. Set an environment variable permanently for the current user.
-113. Add a directory to the `PATH` environment variable temporarily.
-114. Add a directory to the `PATH` environment variable permanently.
-115. Create an alias for a frequently used command.
-116. Define a custom function in your `.bashrc` or `.bash_profile`.
-117. Understand the order in which Bash profile files are loaded.
-118. Create a script that reads environment variables for cloud credentials (e.g., `AWS_ACCESS_KEY_ID`).
-119. Use `.env` files and `source` them in a script.
-120. Write a script to switch between different sets of environment variables.
+111. [Set an environment variable temporarily in the current shell](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/111st.sh).
+112. [Set an environment variable permanently for the current user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/112nd.sh).
+113. [Add a directory to the `PATH` environment variable temporarily](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/113rd.sh).
+114. [Add a directory to the `PATH` environment variable permanently](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/114th.sh).
+115. [Create an alias for a frequently used command](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/115th.sh).
+116. [Define a custom function in your `.bashrc` or `.bash_profile`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/116th.sh).
+117. [Understand the order in which Bash profile files are loaded](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/117th.sh).
+118. [Create a script that reads environment variables for cloud credentials](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/118th.sh) (e.g., `AWS_ACCESS_KEY_ID`).
+119. [Use `.env` files and `source` them in a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/119th.sh).
+120. [Write a script to switch between different sets of environment variables](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/120th.sh).
 
 **Basic Cloud CLI Interaction (Simulated or Local):**
 
