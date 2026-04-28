@@ -145,7 +145,7 @@ This challenge is designed to start from the very beginning and build confidence
 109. [Create a script that adds a new cron job to back up a directory daily](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/109th.sh).
 110. [Create a script that checks if a cron job ran successfully by examining its log file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/110th.sh).
 
-**Environment Variables and Profiles:**
+**[Environment Variables and Profiles:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
 111. [Set an environment variable temporarily in the current shell](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/111st.sh).
 112. [Set an environment variable permanently for the current user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/112nd.sh).
