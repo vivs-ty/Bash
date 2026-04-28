@@ -134,16 +134,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **[Scheduling with Cron:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
-101. Schedule a script to run every day at midnight.
-102. Schedule a script to run every hour.
-103. Schedule a script to run every Monday at 9 AM.
-104. Schedule a script to run on the 15th of every month.
-105. Redirect the output of a cron job to a log file.
-106. Prevent email notifications from a cron job.
-107. List all cron jobs for the current user.
-108. Remove a specific cron job.
-109. Create a script that adds a new cron job to back up a directory daily.
-110. Create a script that checks if a cron job ran successfully by examining its log file.
+101. [Schedule a script to run every day at midnight](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/101th.sh).
+102. [Schedule a script to run every hour](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/102nd.sh).
+103. [Schedule a script to run every Monday at 9 AM](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/103rd.sh).
+104. [Schedule a script to run on the 15th of every month](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/104th.sh).
+105. [Redirect the output of a cron job to a log file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/105th.sh).
+106. [Prevent email notifications from a cron job](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/106th.sh).
+107. [List all cron jobs for the current user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/107th.sh).
+108. [Remove a specific cron job](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/108th.sh).
+109. [Create a script that adds a new cron job to back up a directory daily](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/109th.sh).
+110. [Create a script that checks if a cron job ran successfully by examining its log file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/110th.sh).
 
 **Environment Variables and Profiles:**
 
