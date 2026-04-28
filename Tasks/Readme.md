@@ -96,7 +96,7 @@ This challenge is designed to start from the very beginning and build confidence
 
 ## Phase 2: Intermediate Level (Tasks 71-140)
 
-**Advanced File Operations and Text Processing:**
+**[Advanced File Operations and Text Processing:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
 71. [Find all files larger than 1MB in the `/var/log` directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/71st.sh).
 72. [Find all files modified in the last 24 hours](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/72nd.sh).
