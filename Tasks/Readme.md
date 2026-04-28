@@ -108,16 +108,16 @@ This challenge is designed to start from the very beginning and build confidence
 78. [Extract specific columns (e.g., timestamp and request method) from a web server log using `awk`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/78th.sh).
 79. [Calculate the total size of all files in a directory using `du` and `awk`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/79th.sh).
 80. [Sort the lines of a file alphabetically](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/80th.sh).
-81. Remove duplicate lines from a file.
-82. Split a large file into smaller files of a specific size.
-83. Compare two files and output the differences.
-84. Apply a patch file to a configuration file.
-85. Create an archive of a directory using `tar`.
-86. Extract the contents of a `tar.gz` archive.
-87. Compress a file using `gzip`.
-88. Decompress a `.gz` file.
-89. Use `sed` to insert a line at the beginning of a file.
-90. Use `sed` to append a line at the end of a file.
+81. [Remove duplicate lines from a file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/81st.sh).
+82. [Split a large file into smaller files of a specific size](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/82nd.sh).
+83. [Compare two files and output the differences](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/83rd.sh).
+84. [Apply a patch file to a configuration file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/84th.sh).
+85. [Create an archive of a directory using `tar`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/85th.sh).
+86. [Extract the contents of a `tar.gz` archive](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/86th.sh).
+87. [Compress a file using `gzip`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/87th.sh).
+88. [Decompress a `.gz` file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/88th.sh).
+89. [Use `sed` to insert a line at the beginning of a file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/89th.sh).
+90. [Use `sed` to append a line at the end of a file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/90th.sh).
 
 **Process Management and System Information:**
 
