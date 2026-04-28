@@ -160,11 +160,11 @@ This challenge is designed to start from the very beginning and build confidence
 
 **[Basic Cloud CLI Interaction (Simulated or Local)](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level):**
 
-121. Simulate listing "instances" (e.g., by listing files in a directory).
-122. Simulate starting an "instance" (e.g., by creating an empty file).
-123. Simulate stopping an "instance" (e.g., by deleting a file).
-124. Simulate getting the "status" of an "instance" (e.g., by checking if a file exists).
-125. Create a script to simulate deploying a simple "application" (e.g., copying files to a target directory).
+121. [Simulate listing "instances"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/121st.sh) (e.g., by listing files in a directory).
+122. [Simulate starting an "instance"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/122nd.sh) (e.g., by creating an empty file).
+123. [Simulate stopping an "instance"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/123rd.sh) (e.g., by deleting a file).
+124. [Simulate getting the "status" of an "instance"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/124th.sh) (e.g., by checking if a file exists).
+125. [Create a script to simulate deploying a simple "application"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/125th.sh) (e.g., copying files to a target directory).
 
 **Error Handling and Script Logic:**
 
