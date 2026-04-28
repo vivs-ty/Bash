@@ -121,16 +121,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Process Management and System Information:**
 
-91. List all running processes owned by a specific user.
-92. Find the process ID (PID) of a process by its name (e.g., `nginx`).
-93. Kill a process by its PID.
-94. Kill all processes with a specific name. (Use with caution!)
-95. Monitor the CPU and memory usage of the top 5 processes in real-time using `top`.
-96. Write a script to automatically restart a failed service.
-97. Get the hostname and IP address of the current machine.
-98. Display the amount of free and used memory.
-99. Display the disk space usage for all mounted file systems.
-100. Get the system uptime.
+91. [List all running processes owned by a specific user](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/91st.sh).
+92. [Find the process ID (PID) of a process by its name](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/92nd.sh) (e.g., `nginx`).
+93. [Kill a process by its PID](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/93rd.sh).
+94. [Kill all processes with a specific name](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/94th.sh). (Use with caution!)
+95. [Monitor the CPU and memory usage of the top 5 processes in real-time using `top`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/95th.sh).
+96. [Write a script to automatically restart a failed service](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/96th.sh).
+97. [Get the hostname and IP address of the current machine](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/97th.sh).
+98. [Display the amount of free and used memory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/98th.sh).
+99. [Display the disk space usage for all mounted file systems](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/99th.sh).
+100. [Get the system uptime](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/100th.sh).
 
 **Scheduling with Cron:**
 
