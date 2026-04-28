@@ -158,7 +158,7 @@ This challenge is designed to start from the very beginning and build confidence
 119. [Use `.env` files and `source` them in a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/119th.sh).
 120. [Write a script to switch between different sets of environment variables](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/120th.sh).
 
-**Basic Cloud CLI Interaction (Simulated or Local):**
+**[Basic Cloud CLI Interaction (Simulated or Local)](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level):**
 
 121. Simulate listing "instances" (e.g., by listing files in a directory).
 122. Simulate starting an "instance" (e.g., by creating an empty file).
