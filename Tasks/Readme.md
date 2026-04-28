@@ -98,16 +98,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Advanced File Operations and Text Processing:**
 
-71. Find all files larger than 1MB in the `/var/log` directory.
-72. Find all files modified in the last 24 hours.
-73. Find and delete all `.tmp` files recursively. (Use with extreme caution!)
-74. Extract all unique IP addresses from an Apache access log.
-75. Count the occurrences of each HTTP status code in an Nginx access log.
-76. Replace all occurrences of "localhost" with "127.0.0.1" in a configuration file.
-77. Delete all blank lines from a text file.
-78. Extract specific columns (e.g., timestamp and request method) from a web server log using `awk`.
-79. Calculate the total size of all files in a directory using `du` and `awk`.
-80. Sort the lines of a file alphabetically.
+71. [Find all files larger than 1MB in the `/var/log` directory](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/71st.sh).
+72. [Find all files modified in the last 24 hours](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/72nd.sh).
+73. [Find and delete all `.tmp` files recursively](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/73rd.sh). (Use with extreme caution!)
+74. [Extract all unique IP addresses from an Apache access log](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/74th.sh).
+75. [Count the occurrences of each HTTP status code in an Nginx access log](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/75th.sh).
+76. [Replace all occurrences of "localhost" with "127.0.0.1" in a configuration file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/76th.sh).
+77. [Delete all blank lines from a text file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/77th.sh).
+78. [Extract specific columns (e.g., timestamp and request method) from a web server log using `awk`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/78th.sh).
+79. [Calculate the total size of all files in a directory using `du` and `awk`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/79th.sh).
+80. [Sort the lines of a file alphabetically](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/80th.sh).
 81. Remove duplicate lines from a file.
 82. Split a large file into smaller files of a specific size.
 83. Compare two files and output the differences.
