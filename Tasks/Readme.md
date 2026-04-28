@@ -132,7 +132,7 @@ This challenge is designed to start from the very beginning and build confidence
 99. [Display the disk space usage for all mounted file systems](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/99th.sh).
 100. [Get the system uptime](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/100th.sh).
 
-**Scheduling with Cron:**
+**[Scheduling with Cron:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
 101. Schedule a script to run every day at midnight.
 102. Schedule a script to run every hour.
