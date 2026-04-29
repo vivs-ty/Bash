@@ -168,11 +168,11 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Error Handling and Script Logic:**
 
-126. Use `set -e` to make a script exit immediately on error.
-127. Use `set -x` to debug a script by showing executed commands.
-128. Implement basic error checking in a script (e.g., checking if a command succeeded).
-129. Use `if` statements to handle different scenarios based on command exit codes.
-130. Use the `trap` command to handle script termination signals (e.g., `Ctrl+C`).
+126. [Use `set -e` to make a script exit immediately on error](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/126th.sh).
+127. [Use `set -x` to debug a script by showing executed commands](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/127th.sh).
+128. [Implement basic error checking in a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/128th.sh) (e.g., checking if a command succeeded).
+129. [Use `if` statements to handle different scenarios based on command exit codes](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/129th.sh).
+130. [Use the `trap` command to handle script termination signals](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/130th.sh) (e.g., `Ctrl+C`).
 131. Create a script that logs errors to a separate log file.
 132. Implement a retry mechanism for a potentially failing command.
 133. Validate user input in a script.
