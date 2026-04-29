@@ -166,23 +166,23 @@ This challenge is designed to start from the very beginning and build confidence
 124. [Simulate getting the "status" of an "instance"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/124th.sh) (e.g., by checking if a file exists).
 125. [Create a script to simulate deploying a simple "application"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/125th.sh) (e.g., copying files to a target directory).
 
-**Error Handling and Script Logic:**
+**[Error Handling and Script Logic:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
-126. Use `set -e` to make a script exit immediately on error.
-127. Use `set -x` to debug a script by showing executed commands.
-128. Implement basic error checking in a script (e.g., checking if a command succeeded).
-129. Use `if` statements to handle different scenarios based on command exit codes.
-130. Use the `trap` command to handle script termination signals (e.g., `Ctrl+C`).
-131. Create a script that logs errors to a separate log file.
-132. Implement a retry mechanism for a potentially failing command.
-133. Validate user input in a script.
-134. Create a script that checks for dependencies before running.
-135. Write a script that uses a configuration file to define settings.
-136. Parse command-line options using `getopt` or similar methods.
-137. Create a simple menu-driven script.
-138. Write a script that uses a loop to perform an action on multiple files or resources.
-139. Implement a basic locking mechanism to prevent concurrent execution of a script.
-140. Write a script that sends an email notification upon completion or failure.
+126. [Use `set -e` to make a script exit immediately on error](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/126th.sh).
+127. [Use `set -x` to debug a script by showing executed commands](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/127th.sh).
+128. [Implement basic error checking in a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/128th.sh) (e.g., checking if a command succeeded).
+129. [Use `if` statements to handle different scenarios based on command exit codes](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/129th.sh).
+130. [Use the `trap` command to handle script termination signals](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/130th.sh) (e.g., `Ctrl+C`).
+131. [Create a script that logs errors to a separate log file](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/131th.sh).
+132. [Implement a retry mechanism for a potentially failing command](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/132nd.sh).
+133. [Validate user input in a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/133rd.sh).
+134. [Create a script that checks for dependencies before running](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/134th.sh).
+135. [Write a script that uses a configuration file to define settings](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/135th.sh).
+136. [Parse command-line options using `getopt` or similar methods](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/136th.sh).
+137. [Create a simple menu-driven script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/137th.sh).
+138. [Write a script that uses a loop to perform an action on multiple files or resources](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/138th.sh).
+139. [Implement a basic locking mechanism to prevent concurrent execution of a script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/139th.sh).
+140. [Write a script that sends an email notification upon completion or failure](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/140th.sh).
 
 ---
 
