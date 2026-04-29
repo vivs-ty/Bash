@@ -166,7 +166,7 @@ This challenge is designed to start from the very beginning and build confidence
 124. [Simulate getting the "status" of an "instance"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/124th.sh) (e.g., by checking if a file exists).
 125. [Create a script to simulate deploying a simple "application"](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/125th.sh) (e.g., copying files to a target directory).
 
-**Error Handling and Script Logic:**
+**[Error Handling and Script Logic:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_2_Intermediate-Level)**
 
 126. [Use `set -e` to make a script exit immediately on error](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/126th.sh).
 127. [Use `set -x` to debug a script by showing executed commands](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_2_Intermediate-Level/127th.sh).
