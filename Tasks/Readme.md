@@ -213,16 +213,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **Automating Infrastructure (e.g., Terraform with Bash - Assuming Terraform is installed):**
 
-161. Write a Bash script to initialize a Terraform project (`terraform init`).
-162. Write a Bash script to run `terraform plan` and save the output.
-163. Write a Bash script to apply the Terraform configuration (`terraform apply --auto-approve`).
-164. Write a Bash script to destroy the Terraform managed infrastructure (`terraform destroy --auto-approve`).
-165. Create a Bash script that takes environment names (dev, staging, prod) as input and applies the corresponding Terraform configuration.
-166. Dynamically generate Terraform variable files (`.tfvars`) using Bash based on environment.
-167. Use Bash to loop through a list of regions and deploy infrastructure using Terraform in each region.
-168. Extract output values from Terraform and use them in subsequent Bash commands.
-169. Implement error handling for Terraform commands within a Bash script.
-170. Create a script to automatically update Terraform providers.
+161. [Write a Bash script to initialize a Terraform project (`terraform init`)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/161st.sh).
+162. [Write a Bash script to run `terraform plan` and save the output](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/162nd.sh).
+163. [Write a Bash script to apply the Terraform configuration (`terraform apply --auto-approve`)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/163rd.sh).
+164. [Write a Bash script to destroy the Terraform managed infrastructure (`terraform destroy --auto-approve`)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/164th.sh).
+165. [Create a Bash script that takes environment names (dev, staging, prod) as input and applies the corresponding Terraform configuration](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/165th.sh).
+166. [Dynamically generate Terraform variable files (`.tfvars`) using Bash based on environment](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/166th.sh).
+167. [Use Bash to loop through a list of regions and deploy infrastructure using Terraform in each region](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/167th.sh).
+168. [Extract output values from Terraform and use them in subsequent Bash commands](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/168th.sh).
+169. [Implement error handling for Terraform commands within a Bash script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/169th.sh).
+170. [Create a script to automatically update Terraform providers](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/170th.sh).
 
 **Networking Tools:**
 
