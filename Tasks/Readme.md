@@ -224,18 +224,18 @@ This challenge is designed to start from the very beginning and build confidence
 169. [Implement error handling for Terraform commands within a Bash script](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/169th.sh).
 170. [Create a script to automatically update Terraform providers](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/170th.sh).
 
-**Networking Tools:**
+**[Networking Tools:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level)**
 
-171. Use `ping` to check the latency to multiple hosts and report the average.
-172. Use `curl` to download a file and check its HTTP status code.
-173. Use `curl` to send a POST request to an API endpoint with JSON data.
-174. Use `curl` to interact with an API that requires authentication (e.g., Basic Auth, API keys).
-175. Use `netstat` (or `ss`) to list all listening ports on a server.
-176. Use `netstat` (or `ss`) to find the process using a specific port.
-177. Write a script to check if a list of ports is open on a remote host using `nc` or `nmap`.
-178. Use `dig` or `nslookup` to query DNS records.
-179. Automate network diagnostics by combining `ping`, `traceroute`, and `netstat`.
-180. Write a script to monitor network interface statistics.
+171. [Use `ping` to check the latency to multiple hosts and report the average]().
+172. [Use `curl` to download a file and check its HTTP status code]().
+173. [Use `curl` to send a POST request to an API endpoint with JSON data]().
+174. [Use `curl` to interact with an API that requires authentication]() (e.g., Basic Auth, API keys).
+175. [Use `netstat` (or `ss`) to list all listening ports on a server]().
+176. [Use `netstat` (or `ss`) to find the process using a specific port]().
+177. [Write a script to check if a list of ports is open on a remote host using `nc` or `nmap`]().
+178. [Use `dig` or `nslookup` to query DNS records]().
+179. [Automate network diagnostics by combining `ping`, `traceroute`, and `netstat`]().
+180. [Write a script to monitor network interface statistics]().
 
 **APIs with curl and jq:**
 
