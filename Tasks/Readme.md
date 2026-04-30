@@ -250,16 +250,16 @@ This challenge is designed to start from the very beginning and build confidence
 189. [Write a script to monitor the status of multiple API endpoints](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/189th.sh).
 190. [Transform data retrieved from one API and send it to another](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/190th.sh).
 
-**Error Handling and Debugging (Advanced):**
+**[Error Handling and Debugging](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level) (Advanced):**
 
-191. Implement custom error messages and logging with timestamps.
-192. Use `trap` to handle specific signals like `SIGINT` and perform cleanup actions.
-193. Create a robust error handling function that takes an error message and exit code.
-194. Use conditional debugging output based on a script argument or environment variable.
-195. Implement a rollback mechanism in case of script failure during critical operations.
-196. Use `set -o pipefail` to ensure that a script exits if any command in a pipeline fails.
-197. Write a script to automatically collect and report error logs.
-198. Use `shellcheck` to statically analyze your Bash scripts for potential issues.
+191. [Implement custom error messages and logging with timestamps](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/191st.sh).
+192. [Use `trap` to handle specific signals like `SIGINT` and perform cleanup actions](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/192nd.sh).
+193. [Create a robust error handling function that takes an error message and exit code](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/193rd.sh).
+194. [Use conditional debugging output based on a script argument or environment variable](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/194th.sh).
+195. [Implement a rollback mechanism in case of script failure during critical operations](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/195th.sh).
+196. [Use `set -o pipefail` to ensure that a script exits if any command in a pipeline fails](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/196th.sh).
+197. [Write a script to automatically collect and report error logs](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/197th.sh).
+198. [Use `shellcheck` to statically analyze your Bash scripts for potential issues](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/198th.sh).
 
 **Creating Reusable Bash Libraries:**
 
