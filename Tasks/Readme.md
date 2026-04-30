@@ -226,16 +226,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **[Networking Tools:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level)**
 
-171. [Use `ping` to check the latency to multiple hosts and report the average]().
-172. [Use `curl` to download a file and check its HTTP status code]().
-173. [Use `curl` to send a POST request to an API endpoint with JSON data]().
-174. [Use `curl` to interact with an API that requires authentication]() (e.g., Basic Auth, API keys).
-175. [Use `netstat` (or `ss`) to list all listening ports on a server]().
-176. [Use `netstat` (or `ss`) to find the process using a specific port]().
-177. [Write a script to check if a list of ports is open on a remote host using `nc` or `nmap`]().
-178. [Use `dig` or `nslookup` to query DNS records]().
-179. [Automate network diagnostics by combining `ping`, `traceroute`, and `netstat`]().
-180. [Write a script to monitor network interface statistics]().
+171. [Use `ping` to check the latency to multiple hosts and report the average](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/171st.sh).
+172. [Use `curl` to download a file and check its HTTP status code](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/172nd.sh).
+173. [Use `curl` to send a POST request to an API endpoint with JSON data](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/173rd.sh).
+174. [Use `curl` to interact with an API that requires authentication](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/174th.sh) (e.g., Basic Auth, API keys).
+175. [Use `netstat` (or `ss`) to list all listening ports on a server](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/175th.sh).
+176. [Use `netstat` (or `ss`) to find the process using a specific port](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/176th.sh).
+177. [Write a script to check if a list of ports is open on a remote host using `nc` or `nmap`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/177th.sh).
+178. [Use `dig` or `nslookup` to query DNS records](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/178th.sh).
+179. [Automate network diagnostics by combining `ping`, `traceroute`, and `netstat`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/179th.sh).
+180. [Write a script to monitor network interface statistics](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/180th.sh).
 
 **APIs with curl and jq:**
 
