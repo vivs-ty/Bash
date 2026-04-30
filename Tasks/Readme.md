@@ -211,7 +211,7 @@ This challenge is designed to start from the very beginning and build confidence
 159. [Write a script to automate database backups to Google Cloud Storage using `gcloud`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/159th.sh).
 160. [Parse JSON output from cloud CLIs using `jq` to extract specific information](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/160th.sh).
 
-**Automating Infrastructure (e.g., Terraform with Bash - Assuming Terraform is installed):**
+**[Automating Infrastructure](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level) (e.g., Terraform with Bash - Assuming Terraform is installed):**
 
 161. [Write a Bash script to initialize a Terraform project (`terraform init`)](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/161st.sh).
 162. [Write a Bash script to run `terraform plan` and save the output](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/162nd.sh).
