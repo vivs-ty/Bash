@@ -261,9 +261,11 @@ This challenge is designed to start from the very beginning and build confidence
 197. [Write a script to automatically collect and report error logs](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/197th.sh).
 198. [Use `shellcheck` to statically analyze your Bash scripts for potential issues](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/198th.sh).
 
-**Creating Reusable Bash Libraries:**
+**[Creating Reusable Bash Libraries:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level)**
 
-199. Create a library of common functions for string manipulation, file operations, and API interactions in separate `.sh` files and source them in your main scripts.
-200. Develop a modular Bash framework for deploying and managing cloud resources, utilizing functions and configuration files for reusability and maintainability.
+199. [Create a library of common functions for string manipulation, file operations, and API interactions in separate `.sh` files and source them in your main scripts](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/199th.sh).
+200. [Develop a modular Bash framework for deploying and managing cloud resources, utilizing functions and configuration files for reusability and maintainability](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/200th.sh).
 
+*[config](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level/config)*
+*[lib](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level/lib)*
 ---
