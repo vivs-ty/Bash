@@ -190,16 +190,16 @@ This challenge is designed to start from the very beginning and build confidence
 
 **[Cloud CLI Integration](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level) (AWS CLI, Azure CLI, gcloud - Assuming you have access and credentials configured):**
 
-141. Use AWS CLI to list all EC2 instances in a specific region.
-142. Use AWS CLI to start and stop an EC2 instance by its ID.
-143. Use AWS CLI to get details about a specific S3 bucket.
-144. Use AWS CLI to upload a file to an S3 bucket.
-145. Use AWS CLI to list all IAM users.
-146. Use Azure CLI to list all resource groups.
-147. Use Azure CLI to create and delete a virtual machine.
-148. Use Azure CLI to list storage accounts.
-149. Use Azure CLI to create a blob container.
-150. Use gcloud to list all compute instances in a project.
+141. [Use AWS CLI to list all EC2 instances in a specific region](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/141th.sh).
+142. [Use AWS CLI to start and stop an EC2 instance by its ID](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/142nd.sh).
+143. [Use AWS CLI to get details about a specific S3 bucket](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/143rd.sh).
+144. [Use AWS CLI to upload a file to an S3 bucket](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/144th.sh).
+145. [Use AWS CLI to list all IAM users](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/145th.sh).
+146. [Use Azure CLI to list all resource groups](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/146th.sh).
+147. [Use Azure CLI to create and delete a virtual machine](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/147th.sh).
+148. [Use Azure CLI to list storage accounts](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/148th.sh).
+149. [Use Azure CLI to create a blob container](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/149th.sh).
+150. [Use gcloud to list all compute instances in a project](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/150th.sh).
 151. Use gcloud to create and delete a firewall rule.
 152. Use gcloud to list all Cloud Storage buckets.
 153. Use gcloud to deploy a Cloud Function.
