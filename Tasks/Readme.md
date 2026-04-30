@@ -237,18 +237,18 @@ This challenge is designed to start from the very beginning and build confidence
 179. [Automate network diagnostics by combining `ping`, `traceroute`, and `netstat`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/179th.sh).
 180. [Write a script to monitor network interface statistics](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/180th.sh).
 
-**APIs with curl and jq:**
+**[APIs with curl and jq:](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level)**
 
-181. Fetch data from a public REST API using `curl`.
-182. Parse specific data fields from a JSON API response using `jq`.
-183. Send a PUT request to update a resource via an API using `curl` and `jq`.
-184. Send a DELETE request to remove a resource via an API.
-185. Implement pagination handling when fetching data from APIs.
-186. Handle different HTTP response codes in your API interaction scripts.
-187. Securely pass API keys or tokens using environment variables or other secure methods with `curl`.
-188. Construct complex JSON payloads for API requests using Bash string manipulation or external tools.
-189. Write a script to monitor the status of multiple API endpoints.
-190. Transform data retrieved from one API and send it to another.
+181. [Fetch data from a public REST API using `curl`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/181st.sh).
+182. [Parse specific data fields from a JSON API response using `jq`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/182nd.sh).
+183. [Send a PUT request to update a resource via an API using `curl` and `jq`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/183rd.sh).
+184. [Send a DELETE request to remove a resource via an API](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/184th.sh).
+185. [Implement pagination handling when fetching data from APIs](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/185th.sh).
+186. [Handle different HTTP response codes in your API interaction scripts](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/186th.sh).
+187. [Securely pass API keys or tokens using environment variables or other secure methods with `curl`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/187th.sh).
+188. [Construct complex JSON payloads for API requests using Bash string manipulation or external tools](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/188th.sh).
+189. [Write a script to monitor the status of multiple API endpoints](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/189th.sh).
+190. [Transform data retrieved from one API and send it to another](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/190th.sh).
 
 **Error Handling and Debugging (Advanced):**
 
