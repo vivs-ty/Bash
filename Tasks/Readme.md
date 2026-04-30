@@ -188,7 +188,7 @@ This challenge is designed to start from the very beginning and build confidence
 
 ## Phase 3: Advanced Level (Tasks 141-200)
 
-**Cloud CLI Integration (AWS CLI, Azure CLI, gcloud - Assuming you have access and credentials configured):**
+**[Cloud CLI Integration](https://github.com/vivs-ty/Bash/tree/main/Tasks/Phase_3_Advance-Level) (AWS CLI, Azure CLI, gcloud - Assuming you have access and credentials configured):**
 
 141. Use AWS CLI to list all EC2 instances in a specific region.
 142. Use AWS CLI to start and stop an EC2 instance by its ID.
