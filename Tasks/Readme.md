@@ -200,16 +200,16 @@ This challenge is designed to start from the very beginning and build confidence
 148. [Use Azure CLI to list storage accounts](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/148th.sh).
 149. [Use Azure CLI to create a blob container](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/149th.sh).
 150. [Use gcloud to list all compute instances in a project](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/150th.sh).
-151. Use gcloud to create and delete a firewall rule.
-152. Use gcloud to list all Cloud Storage buckets.
-153. Use gcloud to deploy a Cloud Function.
-154. Write a script to automate the backup of EC2 volumes using AWS CLI.
-155. Write a script to deploy a static website to S3 using AWS CLI.
-156. Write a script to create a new Azure Container Registry using Azure CLI.
-157. Write a script to deploy an ARM template using Azure CLI.
-158. Write a script to create a new Google Compute Engine instance with specific configurations using `gcloud`.
-159. Write a script to automate database backups to Google Cloud Storage using `gcloud`.
-160. Parse JSON output from cloud CLIs using `jq` to extract specific information.
+151. [Use gcloud to create and delete a firewall rule](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/151st.sh).
+152. [Use gcloud to list all Cloud Storage buckets](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/152nd.sh).
+153. [Use gcloud to deploy a Cloud Function](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/153rd.sh).
+154. [Write a script to automate the backup of EC2 volumes using AWS CLI](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/154th.sh).
+155. [Write a script to deploy a static website to S3 using AWS CLI](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/155th.sh).
+156. [Write a script to create a new Azure Container Registry using Azure CLI](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/156th.sh).
+157. [Write a script to deploy an ARM template using Azure CLI](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/157th.sh).
+158. [Write a script to create a new Google Compute Engine instance with specific configurations using `gcloud`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/158th.sh).
+159. [Write a script to automate database backups to Google Cloud Storage using `gcloud`](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/159th.sh).
+160. [Parse JSON output from cloud CLIs using `jq` to extract specific information](https://github.com/vivs-ty/Bash/blob/main/Tasks/Phase_3_Advance-Level/160th.sh).
 
 **Automating Infrastructure (e.g., Terraform with Bash - Assuming Terraform is installed):**
 
